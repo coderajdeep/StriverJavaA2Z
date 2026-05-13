@@ -1,0 +1,2 @@
+package BinarySearch;public class Solution_19_MinCapacityToShipPackagesWithinD_Days_1011 {
+}

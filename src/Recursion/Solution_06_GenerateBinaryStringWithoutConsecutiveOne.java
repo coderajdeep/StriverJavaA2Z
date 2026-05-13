@@ -1,0 +1,2 @@
+package Recursion;public class Solution_06_GenerateBinaryStringWithoutConsecutiveOne {
+}
