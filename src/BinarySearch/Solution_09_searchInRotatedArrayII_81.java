@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class Solution_10_searchInRotatedArrayII_81 {
+public class Solution_09_searchInRotatedArrayII_81 {
     // https://chatgpt.com/share/69eb7d2f-1074-8320-ba54-0efd1534279c
     public boolean search(int[] nums, int target) {
         int low = 0, high = nums.length - 1, mid;

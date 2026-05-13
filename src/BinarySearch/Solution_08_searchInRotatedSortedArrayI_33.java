@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class Solution_9_searchInRotatedSortedArrayI_33 {
+public class Solution_08_searchInRotatedSortedArrayI_33 {
     // nums = [1,3]
     // target = 3
     public int search(int[] nums, int target) {

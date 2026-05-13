@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Solution_TopKFrequentElements_347 {
+public class Solution_17_TopKFrequentElements_347 {
     // https://youtu.be/GLw4WbJdYLw
     // Time complexity O(n+k)
     public int[] topKFrequent(int[] nums, int k) {

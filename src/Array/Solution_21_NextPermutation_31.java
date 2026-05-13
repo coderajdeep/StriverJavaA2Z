@@ -1,4 +1,4 @@
-package Arrays;
+package Array;
 
 public class Solution_21_NextPermutation_31 {
 

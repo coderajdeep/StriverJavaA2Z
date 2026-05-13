@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class Solution_06_FirstAndLastOccurrence {
+public class Solution_06_FirstAndLastOccurrence_34 {
     public int[] searchRange(int[] nums, int target) {
         int lowerIndex = lowerBound(nums, target);
         if (lowerIndex == nums.length) {

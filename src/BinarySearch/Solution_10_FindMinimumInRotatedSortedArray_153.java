@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class Solution_11_FindMinimumInRotatedSortedArray_153 {
+public class Solution_10_FindMinimumInRotatedSortedArray_153 {
     public int findMin(int[] nums) {
         int minValue = Integer.MAX_VALUE, low = 0, high = nums.length - 1, mid;
         while (low <= high) {

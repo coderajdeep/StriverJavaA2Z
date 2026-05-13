@@ -2,7 +2,7 @@ package BinarySearch;
 
 import java.util.ArrayList;
 
-public class Solution_12_RotationCount {
+public class Solution_11_RotationCountInSortedArray {
     public int findKRotation(ArrayList<Integer> arr) {
         int minValueIndex = -1, low = 0, high = arr.size() - 1, mid;
         while (low <= high) {

@@ -1,4 +1,4 @@
-package Arrays;
+package Array;
 
 public class Solution_25_RotateMatrix_48 {
     // Time complexity O(n*m)

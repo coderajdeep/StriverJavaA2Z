@@ -1,4 +1,4 @@
-package Arrays;
+package Array;
 
 public class Solution_24_SetMatrixZero_73 {
     // Time complexity O(n*m)

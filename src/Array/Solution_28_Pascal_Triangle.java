@@ -3,7 +3,7 @@ package Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution_27_Pascal_Triangle {
+public class Solution_28_Pascal_Triangle {
     // Find the Nth row and Rth Column element
     // Time complexity O(min(R, N-R))
     // Space complexity O(1)

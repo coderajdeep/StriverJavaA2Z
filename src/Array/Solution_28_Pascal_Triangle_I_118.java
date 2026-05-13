@@ -3,7 +3,7 @@ package Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution_27_Pascal_Triangle_I_118 {
+public class Solution_28_Pascal_Triangle_I_118 {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> firstRow = new ArrayList<> (List.of(1));

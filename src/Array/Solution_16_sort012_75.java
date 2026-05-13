@@ -1,4 +1,4 @@
-package Arrays;
+package Array;
 
 public class Solution_16_sort012_75 {
     // Time complexity O(n)
