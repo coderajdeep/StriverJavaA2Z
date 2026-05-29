@@ -21,27 +21,30 @@ public class Solution_05_BinarySubArrayWithGivenSum_930 {
                 sum -= nums[left];
                 ++left;
             }
+            // sum -> window sum between left and right inclusive
+            // count -> total subarray having sum <= k and subarray is ending at index right
             count += (right - left + 1);
             ++right;
         }
         return count;
     }
 
-    // Time complexity O(2*n)
+    // Time complexity O(n)
     // Space complexity O(n)
     // This will work with all the Integers
+    // Dry run with [1, 0, 0, 1, 0] target = 1
     public int numSubArraysWithSumUsingHashMap(int[] nums, int goal) {
-        int sum = 0, count = 0;
+        int sum = 0, totalCount = 0;
         Map<Integer, Integer> map = new HashMap<>();
         map.put(0, 1);
         for (int num : nums) {
             sum += num;
-            Integer valuePresent = map.get(sum - goal);
-            if (valuePresent != null) {
-                count += valuePresent;
+            Integer count = map.get(sum - goal);
+            if (count != null) {
+                totalCount += count;
             }
             map.merge(sum, 1, Integer::sum);
         }
-        return count;
+        return totalCount;
     }
 }

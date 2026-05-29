@@ -5,115 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ffadb7-14d4-4aaf-bfaa-2c8debf50113" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StriverJavaA2Z.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_13_LargestSubArrayWithGivenSumNonNegative.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_15_2Sum_15.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_16_sort012_75.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_17_majorityElement_I_169.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_18_maximumSubArray_53.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_20_RearrangeArray_2149.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_21_NextPermutation_31.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_24_SetMatrixZero_73.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_25_RotateMatrix_48.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_26_SpiralMatrix_54.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_27_SubArraySumEqualsK_560.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_28_Pascal_Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_28_Pascal_Triangle_II_119.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_28_Pascal_Triangle_I_118.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_29_MajorityElement_II_229.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_30_3sum_15.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_31_4sum_18.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_32_LargestSubArrayWithGivenSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_33_LargestSubArrayWithGivenXOR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_33_SubArrayCountWithGivenXOR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_34_MergeOverlappingIntervals_56.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_35_MergeTwoSortedArray_88.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_36_FindMissingRepeatingNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_37_InversionsCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_38_ReversePairs_493.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_39_maxProductSubArray_152.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_05_CeilFloorInSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_06_FirstAndLastOccurrence_34.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_07_CountOccurrencesInSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_08_searchInRotatedSortedArrayI_33.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_09_searchInRotatedArrayII_81.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_10_FindMinimumInRotatedSortedArray_153.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_11_FindMinimumRotatedSortedArray_II_154.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_11_RotationCountInSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_12_SingleElementInSortedArray_540.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_13_peakElement_162.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_14_SquareRoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_15_NthRoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_16_KokoEatingBananas_875.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_17_MinimumDaysToMakeM_Bouquets_1482.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_18_FindSmallestDivisor_1283.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_19_MinCapacityToShipPackagesWithinD_Days_1011.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_20_KthMissingPositiveNumber_1539.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_21_AggressiveCows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_22_BookAllocationProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_23_SplitArrayLargestSum_410.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_24_PainterPartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/Solution_LowerBound_And_UpperBound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Heap/BasicHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Heap/Solution_02_ImplementMinHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Heap/Solution_07_SortKSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Heap/Solution_08_mergeMsortedList_23.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Heap/Solution_15_MaximumSumCombination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Heap/Solution_16_medianInDataStream_295.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Heap/Solution_17_TopKFrequentElements_347.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_03_DeleteNodeHeadNotGiven_237.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_09_ReverseDoublyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_13_detectCycle_141.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_14_detectCycleII_142.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_15_lengthOfCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_16_palindromicLinkedList_234.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_17_OddEvenSegrregation_328.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_18_RemoveNthNodeFromEnd_19.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_19_DeleteMiddleOfLinkedlist_2095.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_20_sortLinkedList_148.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_21_sort012LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_22_intersectionOfLinkedList_160.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_23_addOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution_24_addTwoNumbers_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_01_Atoi_Or_Stoi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_06_GenerateBinaryStringWithoutConsecutiveOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_07_GenerateParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_08_PowerSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_09_GenerateSubsequenceWithTargetSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_12_CombinationSum_39.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_13_CombinationSumII_40.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_14_subsetsI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_15_subsetsII_90.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_16_CombinationSumIII_216.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_17_Letter_Combinations_of_Phone_Number_17.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_18_PalindromePartitioning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_19_Word_Search_79.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_20_N_Queen_51.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/Solution_21_RatInMaze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_04_LongestRepeatingCharacter_424.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_05_BinarySubArrayWithGivenSum_930.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_07_NumberOfSubstringContainingAllThreeCharacter_1358.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_11_MinimumWindowSubstring_76.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_01_ImplementStackUsingArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_02_ImplementQueueUsingArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_03_ImplementStackUsingQueue_225.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_04_ImplementQueueUsingStack_232.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_05_ImplementStackUsingLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_06_ImplementQueueUsingLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_07_ValidParentheses_20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_08_MinStack_155.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_09_InfixToPostfixConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_14_InfixToPrefixConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_19_TrappingRainWater_42.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_20_SumOfSubArrayMinimum_907.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_21_AsteroidCollision_735.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_01_LongestSubstringWithoutRepeatingCharacter_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_02_Max_Consecutive_Ones_III_1004.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_03_FruitsIntoBaskets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_06_NumberOfNiceSubarrays_1248.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_04_LongestRepeatingCharacter_424.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_04_LongestRepeatingCharacter_424.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_05_BinarySubArrayWithGivenSum_930.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_05_BinarySubArrayWithGivenSum_930.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_07_NumberOfSubstringContainingAllThreeCharacter_1358.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_07_NumberOfSubstringContainingAllThreeCharacter_1358.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +33,7 @@
     <urls />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -148,24 +46,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -193,6 +93,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
