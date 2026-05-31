@@ -3,9 +3,11 @@ package SlidingWindowAndTwoPointer;
 import java.util.HashMap;
 import java.util.Map;
 
+// Similar question
+// Find the longest subarray having at most k distinct element
+// https://leetcode.com/problems/fruit-into-baskets/
+
 public class Solution_03_FruitsIntoBaskets {
-    // Similar question
-    // Find the max length subarray having k distinct element
     // Time complexity O(2*n)
     // Space complexity O(2) : constant
     public int totalFruits(int[] fruits) {
@@ -16,6 +18,7 @@ public class Solution_03_FruitsIntoBaskets {
             while (hashMap.size() > 2) {
                 // How merge worked
                 // https://chatgpt.com/share/6a18625a-08a0-83ab-99e7-b4679bc8b1a1
+                // https://chatgpt.com/share/6a19fba5-29d4-8320-b643-be7c574fc2c3
                 hashMap.merge(fruits[left], -1, (oldValue, newValue) -> {
                     newValue += oldValue;
                     return newValue == 0 ? null : newValue;

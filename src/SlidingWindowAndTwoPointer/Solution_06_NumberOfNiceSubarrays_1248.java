@@ -2,13 +2,13 @@ package SlidingWindowAndTwoPointer;
 
 public class Solution_06_NumberOfNiceSubarrays_1248 {
     // Similar to Solution_05_BinarySubArrayWithGivenSum_930
-    // Number of subarray with given sum (elements and sum are non negative)
+    // Number of subarray with given sum (elements and sum are non-negative)
     // Time complexity O(2*n)
     // Space complexity O(1)
     public int numberOfOddSubarrays(int[] nums, int k) {
-        return (int) (numSubArraysWithEqualOrLessSumK(nums, k) - numSubArraysWithEqualOrLessSumK(nums, k-1));
+        return (int) (numOfSubArraysWithAtMostGivenSum(nums, k) - numOfSubArraysWithAtMostGivenSum(nums, k-1));
     }
-    public long numSubArraysWithEqualOrLessSumK(int[] nums, int goal) {
+    public long numOfSubArraysWithAtMostGivenSum(int[] nums, int goal) {
         if (goal < 0) {
             return 0;
         }

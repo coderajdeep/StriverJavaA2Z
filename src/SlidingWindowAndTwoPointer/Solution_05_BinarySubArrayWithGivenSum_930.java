@@ -8,9 +8,9 @@ public class Solution_05_BinarySubArrayWithGivenSum_930 {
     // Space complexity O(1)
     // This will only work if the elements are not negative
     public static int numSubArraysWithSum(int[] nums, int goal) {
-        return numSubArraysWithOrLessSum(nums, goal) - numSubArraysWithOrLessSum(nums, goal-1);
+        return numOfSubArraysWithAtMostGivenSum(nums, goal) - numOfSubArraysWithAtMostGivenSum(nums, goal-1);
     }
-    public static int numSubArraysWithOrLessSum(int[] nums, int goal) {
+    public static int numOfSubArraysWithAtMostGivenSum(int[] nums, int goal) {
         if (goal < 0) {
             return 0;
         }
