@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ffadb7-14d4-4aaf-bfaa-2c8debf50113" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DP/Solution_13_SubsetSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/Solution_14_isPartitionPossible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/Solution_15_MinSubsetSumDifference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Solution_24_LongestCommonSubsequence_1143.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Solution_25_PrintLongestCommonSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Solution_26_LongestCommonSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Solution_27_LongestPalindromicSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Solution_28_MinInsertionToMakeStringPalindrome_1312.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Solution_29_MinInsertionOrDeletionToConvertStringAtoB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Solution_30_MinimumCommonSupersequence_1092.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Solution_31_DistinctSubsequence_115.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Solution_32_EditDistance_72.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Solution_33_WildcardMatching_44.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,11 +134,6 @@
           <url>file://$PROJECT_DIR$/src/BinarySearch/Solution_20_KthMissingPositiveNumber_1539.java</url>
           <line>26</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DP/Solution_15_MinSubsetSumDifference.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
