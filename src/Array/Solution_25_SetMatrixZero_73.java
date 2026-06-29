@@ -1,6 +1,6 @@
 package Array;
 
-public class Solution_24_SetMatrixZero_73 {
+public class Solution_25_SetMatrixZero_73 {
     // Time complexity O(n*m)
     // Space complexity O(n+m)
     public void setZeroes(int[][] matrix) {

@@ -17,6 +17,11 @@ public class Solution_02_Max_Consecutive_Ones_III_1004 {
                 }
                 ++left;
                 // For this section we can't increase right
+                // simple example
+                // [1, 1, 1, 0, 0, 0, 1, 1] k = 2
+                // In 5th index, we can't increase right
+                // If we do increase right then 1 1 1 0 0 0 1 and 1 1 1 0 0 0 1 1 will be considered valid window
+
                 // [0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1]
                 // Actual output if we increase right : 15
                 // expected output : 9

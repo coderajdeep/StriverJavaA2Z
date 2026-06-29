@@ -1,6 +1,6 @@
 package Array;
 
-public class Solution_21_NextPermutation_31 {
+public class Solution_22_NextPermutation_31 {
 
     // Time complexity O(n)
     // Space complexity O(1)
@@ -17,29 +17,54 @@ public class Solution_21_NextPermutation_31 {
             }
         }
         if (pivot == -1) {
-            reverse(nums, 0, size-1);
+            reverse(0, size-1, nums);
             return;
         }
         for (int i = size-1; i > pivot; i--) {
             // We need to find which element is greater than the pivot
             // Then we need to swap with pivot and reverse from (pivot + 1) index to last index
             if (nums[i] > nums[pivot]) {
-                swap(nums, pivot, i);
-                reverse(nums, pivot + 1, size-1);
+                swap(pivot, i, nums);
+                reverse(pivot + 1, size-1, nums);
                 break;
             }
         }
     }
 
-    private void swap(int[] nums, int index1, int index2) {
+    // Same solution
+    public void nextPermutationSameSolution(int[] nums) {
+        int n = nums.length, pivot = -1;
+        if (n == 1) {
+            return;
+        }
+        for (int i = n-1; i > 0; i--) {
+            if (nums[i] > nums[i-1]) {
+                pivot = i-1;
+                break;
+            }
+        }
+        if (pivot == -1) {
+            reverse(0, n-1, nums);
+            return;
+        }
+        for (int i = n-1; i > pivot; i--) {
+            if (nums[pivot] < nums[i]) {
+                swap(pivot, i, nums);
+                reverse(pivot+1, n-1, nums);
+                return;
+            }
+        }
+    }
+
+    private void swap(int index1, int index2, int[] nums) {
         int temp = nums[index1];
         nums[index1] = nums[index2];
         nums[index2] = temp;
     }
 
-    private void reverse(int[] nums, int start, int end) {
+    private void reverse(int start, int end, int[] nums) {
         while (start < end) {
-            swap(nums, start, end);
+            swap(start, end, nums);
             start++;
             end--;
         }

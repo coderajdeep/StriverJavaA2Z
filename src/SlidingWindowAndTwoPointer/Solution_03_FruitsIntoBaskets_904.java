@@ -6,8 +6,9 @@ import java.util.Map;
 // Similar question
 // Find the longest subarray having at most k distinct element
 // https://leetcode.com/problems/fruit-into-baskets/
+// *** If the question is asking for exactly k distinct element then solution will be different (Similar to  ***
 
-public class Solution_03_FruitsIntoBaskets {
+public class Solution_03_FruitsIntoBaskets_904 {
     // Time complexity O(2*n)
     // Space complexity O(2) : constant
     public int totalFruits(int[] fruits) {

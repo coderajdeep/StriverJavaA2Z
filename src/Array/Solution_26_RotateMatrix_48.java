@@ -1,6 +1,6 @@
 package Array;
 
-public class Solution_25_RotateMatrix_48 {
+public class Solution_26_RotateMatrix_48 {
     // Time complexity O(n*m)
     // Space complexity O(1)
     // https://chatgpt.com/share/69d64945-f5b8-8321-8410-542195b3b78a

@@ -30,4 +30,31 @@ public class Solution_16_sort012_75 {
         nums[index1] = nums[index2];
         nums[index2] = temp;
     }
+
+
+    // Time complexity O(n)
+    // Space complexity O(1)
+    public void sortColorsUsingCountSort(int[] nums) {
+        int size = nums.length;
+        int zero = 0, one = 0, two = 0;
+        for (int num : nums) {
+            if (num == 0) {
+                zero++;
+            }
+            else if (num == 1) {
+                one++;
+            }
+            else if (num == 2) {
+                two++;
+            }
+        }
+        fill(zero, 0, 0, nums);
+        fill(one, zero, 1, nums);
+        fill(two, zero+one, 2, nums);
+    }
+    private void fill(int total, int start, int value, int[] nums) {
+        for (int i=0; i<total; i++) {
+            nums[start+i] = value;
+        }
+    }
 }

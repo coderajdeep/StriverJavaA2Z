@@ -3,7 +3,7 @@ package Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution_20_RearrangeArray_2149 {
+public class Solution_21_RearrangeArray_2149 {
     public int[] rearrangeArray(int[] nums) {
         List<Integer> positive = new ArrayList<> ();
         List<Integer> negative = new ArrayList<> ();

@@ -6,6 +6,7 @@ import Heap.Solution_07_SortKSortedArray;
 import Heap.Solution_15_MaximumSumCombination;
 import Recursion.Solution_09_GenerateSubsequenceWithTargetSum;
 import Recursion.Solution_12_CombinationSum_39;
+import Tries.Solution_Q1_LongestDuplicateSubstring_1044;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,5 +14,7 @@ import java.util.List;
 // Option + Cmd + v
 public class Main {
     public static void main(String[] args) {
+        Solution_Q1_LongestDuplicateSubstring_1044 sol = new Solution_Q1_LongestDuplicateSubstring_1044();
+        System.out.println(sol.longestDupSubstring("banana"));
     }
 }

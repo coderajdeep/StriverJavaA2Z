@@ -3,11 +3,11 @@ package Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution_26_SpiralMatrix_54 {
-    // Time complexity O(n*m)
+public class Solution_27_SpiralMatrix_54 {
+    // Time complexity O(n * m)
     // Space complexity O(1)
     // Space used only to store the result
-    // If we consider that then space complexity O(n*m)
+    // If we consider that then space complexity O(n * m)
     public List<Integer> spiralOrder(int[][] matrix) {
         int left = 0, right = matrix[0].length - 1, top = 0, bottom = matrix.length - 1;
         List<Integer> result = new ArrayList<>();
