@@ -5,62 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ffadb7-14d4-4aaf-bfaa-2c8debf50113" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_01_largestElementInArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_02_secondLargestElementInArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_03_checkSortedOrRotated_1752.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_04_removeDuplicateFromSortedArray_26.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_05_leftRotateByOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_06_leftRotateByK_189.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_07_moveZerosToEnd_283.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_08_linearSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_09_unionOfTwoSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_10_MissingNumber_268.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_11_MaxConsecutiveOne_485.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_12_singleNumber_136.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_14_LargestSubArrayWithGivenSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_20_StockBuyAndSell_121.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_23_leadersInArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Array/Solution_24_longestConsecutiveElements_128.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/Solution_34_StockBuySellSingleTransaction_121.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/Solution_35_StockBuySellMultipleTransaction_122.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/Solution_36_StockBySellWithTwoTransaction_123.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/Solution_37_StockBuySellKTransaction_188.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_05_GraphBfsAndDfs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_07_NumberOfProvinces_547.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_08_NoOfConnectedComponents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_09_RottingOranges_994.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_10_FloodFill_733.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_11_DetectCycle_BFS_DFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_13_01Matrix_DistOfNearestCellHavingZero_542.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_14_SurroundedRegions_130.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_15_NumberOfEnclaves_1020.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_16_WordLadderI_127.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_17_WordLadderII_126.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_18_NumberOfIslands_200.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_19_BipartiteGraph_785.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_20_DetectCycleInDirectedGraph_DFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_21_TopologicalSort_DFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_22_TopologicalSort_BFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_23_DetectCycleInDirectedGraph_BFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_24_CourseSchedule_207.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_25_CourseSchedule_II_210.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Solution_26_FindEventualSafeStates_Using_DFS_BFS_802.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_12_Minimum_Window_Subsequence_727.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tries/Solution_01_TrieBasic_PrefixTree_208.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tries/Solution_02_TrieAdvanced.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tries/Solution_03_LongestWordWithAllPrefix_720_1858.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tries/Solution_04_NumberOfDistinctSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tries/Solution_Q1_LongestDuplicateSubstring_1044.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/Solution_13_LargestSubArrayWithGivenSumNonNegative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/Solution_13_LargestSubArrayWithGivenSumNonNegative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/Solution_16_sort012_75.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/Solution_16_sort012_75.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/Solution_20_RearrangeArray_2149.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/Solution_21_RearrangeArray_2149.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/Solution_21_NextPermutation_31.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/Solution_22_NextPermutation_31.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/Solution_24_SetMatrixZero_73.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/Solution_25_SetMatrixZero_73.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/Solution_25_RotateMatrix_48.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/Solution_26_RotateMatrix_48.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/Solution_26_SpiralMatrix_54.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/Solution_27_SpiralMatrix_54.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_02_Max_Consecutive_Ones_III_1004.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_02_Max_Consecutive_Ones_III_1004.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_03_FruitsIntoBaskets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_03_FruitsIntoBaskets_904.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_Q2_ShortestSubstringWhichContainsAllCharacters.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
