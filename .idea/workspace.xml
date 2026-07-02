@@ -5,7 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ffadb7-14d4-4aaf-bfaa-2c8debf50113" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_Q2_ShortestSubstringWhichContainsAllCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_03_PreInPostOrderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_04_Preorder_144.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_05_Inorder_94.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_06_Postorder_145.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_07_LevelOrderTraversal_102.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_13_MaxDepth_HeightOfBinaryTree_104.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_14_BalancedBinaryTree_110.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_15_DiameterOfBinaryTree_543.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_16_MaximumPathSum_124.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_17_IdenticalTree_100.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_18_ZigZagLevelOrderTraversal_103.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_19_BoundaryTraversal_545.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_20_VerticalOrderTraversal_987.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_21_TopViewOfBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_22_BottomViewOfBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_23_RightViewOfBinaryTree_199.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_24_isSymmetric_101.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_25_AllRootToLeavePaths_257.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_26_LCA_LowestCommonAncestor_236.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_27_MaximumWidthOfBinaryTree_662.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_28_ChildrenSumProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_29_AllNodesDistK_863.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_30_MinTimeToBurnTheBinaryTree_2385.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_31_CountCompleteBinaryTreeNodes_222.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_33_ConstructBinaryTreeFromInorderPreorder_105.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_34_ConstructBinaryTreeFromInorderPostorder_106.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_35_SerializeAndDeserializeBinaryTree_297.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_Q1_BottomLeftTreeValue_513.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree/Solution_Q2_InvertBinaryTree_226.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
