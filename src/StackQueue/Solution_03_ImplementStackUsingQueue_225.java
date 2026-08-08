@@ -1,11 +1,11 @@
 package StackQueue;
 
 import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.Queue;
 
 public class Solution_03_ImplementStackUsingQueue_225 {
     private static class MyStack {
-        private final Deque<Integer> queue;
+        private final Queue<Integer> queue;
         public MyStack() {
             queue = new ArrayDeque<>();
         }

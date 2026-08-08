@@ -49,6 +49,43 @@ public class Solution_08_MinStack_155 {
         }
     }
 
+
+    // Time complexity O(1) - for all the methods
+    // Space complexity O(2*n) - used two stack
+    public static class MinStackUsingTwoStack {
+
+        private final Deque<Integer> stack, minStack;
+
+        public MinStackUsingTwoStack() {
+            this.stack = new ArrayDeque<> ();
+            this.minStack = new ArrayDeque<> ();
+        }
+
+        public void push(int value) {
+            if (minStack.isEmpty() || minStack.peek() > value) {
+                stack.push(value);
+                minStack.push(value);
+            }
+            else {
+                minStack.push(minStack.peek());
+                stack.push(value);
+            }
+        }
+
+        public void pop() {
+            stack.pop();
+            minStack.pop();
+        }
+
+        public int top() {
+            return stack.peek();
+        }
+
+        public int getMin() {
+            return minStack.peek();
+        }
+    }
+
     // Time complexity O(1) - for all the methods
     // Space complexity O(2*n) - used two stack
     public static class MinStackUsingRecord {
