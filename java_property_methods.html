@@ -1,0 +1,416 @@
+<title>Java Built-in API Field Guide</title>
+<style>
+  :root{
+    --bg:#eef1f4;
+    --surface:#ffffff;
+    --surface-alt:#e3e8ed;
+    --border:#d3dae1;
+    --ink:#172033;
+    --ink-muted:#5c6577;
+    --accent:#0f7a74;
+    --accent-ink:#ffffff;
+    --accent-soft:#d9f0ee;
+    --code-bg:#f4f6f8;
+    --shadow:0 1px 2px rgba(23,32,51,.06), 0 10px 28px rgba(23,32,51,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0e141b;
+      --surface:#151d27;
+      --surface-alt:#1c2530;
+      --border:#2a3543;
+      --ink:#e7ecf1;
+      --ink-muted:#93a1b3;
+      --accent:#4fd1c1;
+      --accent-ink:#06211d;
+      --accent-soft:rgba(79,209,193,.14);
+      --code-bg:#101822;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0e141b;
+    --surface:#151d27;
+    --surface-alt:#1c2530;
+    --border:#2a3543;
+    --ink:#e7ecf1;
+    --ink-muted:#93a1b3;
+    --accent:#4fd1c1;
+    --accent-ink:#06211d;
+    --accent-soft:rgba(79,209,193,.14);
+    --code-bg:#101822;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  code, .mono{
+    font-family:ui-monospace,"Cascadia Code","SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+  }
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px 64px;
+  }
+
+  header{
+    position:sticky;
+    top:0;
+    z-index:5;
+    background:var(--bg);
+    padding:28px 0 16px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:28px;
+  }
+  .eyebrow{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 8px;
+  }
+  h1{
+    font-size:clamp(24px,3.4vw,34px);
+    line-height:1.15;
+    margin:0 0 6px;
+    letter-spacing:-.01em;
+    text-wrap:balance;
+  }
+  .sub{
+    color:var(--ink-muted);
+    font-size:14.5px;
+    margin:0 0 18px;
+    max-width:62ch;
+    line-height:1.5;
+  }
+
+  .toolbar{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+  #search{
+    flex:1 1 320px;
+    min-width:220px;
+    padding:10px 14px;
+    border-radius:8px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    color:var(--ink);
+    font-size:14px;
+    font-family:inherit;
+  }
+  #search:focus{
+    outline:2px solid var(--accent);
+    outline-offset:1px;
+  }
+  #count{
+    font-size:12.5px;
+    color:var(--ink-muted);
+    white-space:nowrap;
+    font-variant-numeric:tabular-nums;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap:16px;
+  }
+
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:10px;
+    box-shadow:var(--shadow);
+    padding:16px 18px 8px;
+    display:flex;
+    flex-direction:column;
+  }
+  .card h2{
+    font-size:15px;
+    margin:0;
+    font-weight:700;
+    letter-spacing:-.01em;
+  }
+  .card .import{
+    font-size:11.5px;
+    color:var(--ink-muted);
+    margin:2px 0 12px;
+  }
+
+  ul.entries{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+  }
+  li.entry{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:12px;
+    padding:7px 0;
+    border-top:1px solid var(--border);
+  }
+  li.entry:first-child{ border-top:none; }
+  li.entry code{
+    font-size:12.8px;
+    color:var(--ink);
+    white-space:nowrap;
+  }
+  li.entry .note{
+    font-size:11.5px;
+    color:var(--ink-muted);
+    text-align:right;
+    flex-shrink:2;
+  }
+  li.entry.hidden{ display:none; }
+  .card.hidden{ display:none; }
+
+  footer{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+    color:var(--ink-muted);
+    font-size:12.5px;
+    line-height:1.6;
+  }
+  footer strong{ color:var(--ink); }
+
+  @media (prefers-reduced-motion:no-preference){
+    .card{ transition:box-shadow .15s ease; }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">StriverJavaA2Z &middot; interview revision</p>
+    <h1>Java Built-in API Field Guide</h1>
+    <p class="sub">Every JDK method and property actually used across 222 LeetCode solutions in <code>src/</code> — deduplicated and grouped by class, for a five-minute pass before an interview.</p>
+    <div class="toolbar">
+      <input id="search" type="text" placeholder="Filter — e.g. &quot;merge&quot;, HashMap, poll, substring…" autocomplete="off">
+      <span id="count"></span>
+    </div>
+  </header>
+
+  <main class="grid" id="grid">
+
+    <section class="card" data-cat="java.lang.String">
+      <h2>String</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li class="entry"><code>s.length()</code><span class="note">char count</span></li>
+        <li class="entry"><code>s.charAt(i)</code><span class="note">indexed char</span></li>
+        <li class="entry"><code>s.toCharArray()</code><span class="note">to char[]</span></li>
+        <li class="entry"><code>s.substring(a[,b])</code><span class="note">slice</span></li>
+        <li class="entry"><code>s.split(regex)</code><span class="note">tokenize</span></li>
+        <li class="entry"><code>s.equals(o)</code><span class="note">content compare</span></li>
+        <li class="entry"><code>s.compareTo(o)</code><span class="note">lexicographic</span></li>
+        <li class="entry"><code>s.isEmpty()</code><span class="note">"" check</span></li>
+        <li class="entry"><code>String.valueOf(x)</code><span class="note">char[]/int → String</span></li>
+        <li class="entry"><code>new String(char[])</code><span class="note">build from chars</span></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.lang.StringBuilder">
+      <h2>StringBuilder</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li class="entry"><code>new StringBuilder([s])</code><span class="note">ctor</span></li>
+        <li class="entry"><code>sb.append(x)</code><span class="note">chainable</span></li>
+        <li class="entry"><code>sb.toString()</code><span class="note">materialize</span></li>
+        <li class="entry"><code>sb.length()</code><span class="note">size</span></li>
+        <li class="entry"><code>sb.isEmpty()</code></li>
+        <li class="entry"><code>sb.setLength(n)</code><span class="note">truncate/backtrack</span></li>
+        <li class="entry"><code>sb.reverse()</code></li>
+        <li class="entry"><code>sb.charAt(i)</code></li>
+        <li class="entry"><code>sb.setCharAt(i,c)</code></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.lang.Math">
+      <h2>Math</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li class="entry"><code>Math.max(a,b)</code></li>
+        <li class="entry"><code>Math.min(a,b)</code></li>
+        <li class="entry"><code>Math.abs(x)</code></li>
+        <li class="entry"><code>Math.ceil(x)</code></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.lang.Integer">
+      <h2>Integer / wrappers</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li class="entry"><code>Integer.MAX_VALUE</code><span class="note">sentinel</span></li>
+        <li class="entry"><code>Integer.MIN_VALUE</code><span class="note">sentinel</span></li>
+        <li class="entry"><code>Integer.compare(a,b)</code><span class="note">comparator body</span></li>
+        <li class="entry"><code>Integer.parseInt(s)</code></li>
+        <li class="entry"><code>Integer.toString(i)</code></li>
+        <li class="entry"><code>Integer::sum</code><span class="note">BiFunction for merge()</span></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.lang.Character">
+      <h2>Character</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li class="entry"><code>Character.isDigit(c)</code></li>
+        <li class="entry"><code>Character.isLetterOrDigit(c)</code></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.lang.System array">
+      <h2>System &amp; array property</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li class="entry"><code>arr.length</code><span class="note">1D / 2D — everywhere</span></li>
+        <li class="entry"><code>System.arraycopy(src,sp,dst,dp,len)</code><span class="note">row copy, space-opt DP</span></li>
+        <li class="entry"><code>System.out.print/println(x)</code></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.Arrays">
+      <h2>Arrays</h2>
+      <div class="import">java.util.Arrays</div>
+      <ul class="entries">
+        <li class="entry"><code>Arrays.sort(arr)</code></li>
+        <li class="entry"><code>Arrays.sort(arr, cmp)</code><span class="note">object/2D arrays</span></li>
+        <li class="entry"><code>Arrays.fill(arr, v)</code><span class="note">sentinel init, e.g. -1</span></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.Collections">
+      <h2>Collections</h2>
+      <div class="import">java.util.Collections</div>
+      <ul class="entries">
+        <li class="entry"><code>Collections.reverse(list)</code></li>
+        <li class="entry"><code>Collections.sort(list)</code></li>
+        <li class="entry"><code>Collections.sort(list, cmp)</code></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.List ArrayList">
+      <h2>List / ArrayList</h2>
+      <div class="import">java.util.{List, ArrayList}</div>
+      <ul class="entries">
+        <li class="entry"><code>new ArrayList&lt;&gt;()</code></li>
+        <li class="entry"><code>new ArrayList&lt;&gt;(coll)</code><span class="note">copy-ctor / snapshot</span></li>
+        <li class="entry"><code>list.add(e)</code></li>
+        <li class="entry"><code>list.addAll(coll)</code></li>
+        <li class="entry"><code>list.get(i)</code></li>
+        <li class="entry"><code>list.set(i, v)</code></li>
+        <li class="entry"><code>list.remove(i)</code><span class="note">backtracking pop</span></li>
+        <li class="entry"><code>list.size()</code></li>
+        <li class="entry"><code>list.isEmpty()</code></li>
+        <li class="entry"><code>list.sort(cmp)</code></li>
+        <li class="entry"><code>List.of(...)</code><span class="note">immutable factory</span></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.Map HashMap TreeMap">
+      <h2>Map / HashMap / TreeMap</h2>
+      <div class="import">java.util.{Map, HashMap, TreeMap}</div>
+      <ul class="entries">
+        <li class="entry"><code>new HashMap&lt;&gt;()</code></li>
+        <li class="entry"><code>new TreeMap&lt;&gt;([cmp])</code><span class="note">sorted keys</span></li>
+        <li class="entry"><code>map.put(k,v)</code></li>
+        <li class="entry"><code>map.get(k)</code></li>
+        <li class="entry"><code>map.getOrDefault(k,d)</code></li>
+        <li class="entry"><code>map.containsKey(k)</code></li>
+        <li class="entry"><code>map.computeIfAbsent(k,fn)</code></li>
+        <li class="entry"><code>map.merge(k,v,fn)</code><span class="note">null return removes key</span></li>
+        <li class="entry"><code>map.values()</code></li>
+        <li class="entry"><code>map.entrySet()</code></li>
+        <li class="entry"><code>entry.getKey()/getValue()</code></li>
+        <li class="entry"><code>map.size()</code></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.Set HashSet">
+      <h2>Set / HashSet</h2>
+      <div class="import">java.util.{Set, HashSet}</div>
+      <ul class="entries">
+        <li class="entry"><code>new HashSet&lt;&gt;()</code></li>
+        <li class="entry"><code>new HashSet&lt;&gt;(coll)</code><span class="note">dedupe a List</span></li>
+        <li class="entry"><code>set.add(e)</code></li>
+        <li class="entry"><code>set.contains(e)</code></li>
+        <li class="entry"><code>set.remove(e)</code></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.Queue Deque ArrayDeque Stack">
+      <h2>Queue / Deque / ArrayDeque</h2>
+      <div class="import">java.util.{Queue, Deque, ArrayDeque, LinkedList}</div>
+      <ul class="entries">
+        <li class="entry"><code>new ArrayDeque&lt;&gt;()</code><span class="note">doubles as stack or queue</span></li>
+        <li class="entry"><code>new LinkedList&lt;&gt;()</code><span class="note">as Queue, BFS</span></li>
+        <li class="entry"><code>dq.push(e) / dq.pop()</code><span class="note">stack semantics</span></li>
+        <li class="entry"><code>q.offer(e) / q.poll()</code><span class="note">queue semantics</span></li>
+        <li class="entry"><code>peek()</code></li>
+        <li class="entry"><code>isEmpty()</code></li>
+        <li class="entry"><code>size()</code></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.PriorityQueue">
+      <h2>PriorityQueue</h2>
+      <div class="import">java.util.PriorityQueue</div>
+      <ul class="entries">
+        <li class="entry"><code>new PriorityQueue&lt;&gt;()</code><span class="note">min-heap, natural order</span></li>
+        <li class="entry"><code>new PriorityQueue&lt;&gt;((a,b)-&gt;...)</code><span class="note">custom order, e.g. max-heap</span></li>
+        <li class="entry"><code>pq.offer(x)</code></li>
+        <li class="entry"><code>pq.poll()</code></li>
+        <li class="entry"><code>pq.peek()</code></li>
+        <li class="entry"><code>pq.isEmpty()</code></li>
+        <li class="entry"><code>pq.size()</code></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>Coverage:</strong> all 222 <code>.java</code> files under <code>src/</code> — Array (42), BinarySearch/BinarySearchTree/Tries (31), BinaryTree (30), DP (35), Graph/Heap (27), LinkedList/Recursion/SlidingWindowAndTwoPointer/StackQueue (56). User-defined classes and methods (e.g. <code>ListNode</code>, custom <code>Solution</code> helpers) are excluded — this is JDK API surface only.</p>
+    <p>Notably absent anywhere in the codebase: <code>java.util.stream</code>, <code>Comparator.comparingInt</code>-style static factories, <code>LinkedHashMap</code>/<code>LinkedHashSet</code>, <code>Objects</code>, and the standalone <code>Stack</code> class (its role is played by <code>ArrayDeque</code> throughout).</p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var input = document.getElementById('search');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var countEl = document.getElementById('count');
+  var totalEntries = document.querySelectorAll('.entry').length;
+
+  function apply(){
+    var q = input.value.trim().toLowerCase();
+    var visible = 0;
+    cards.forEach(function(card){
+      var entries = card.querySelectorAll('.entry');
+      var anyVisible = false;
+      entries.forEach(function(li){
+        var text = li.textContent.toLowerCase();
+        var match = q === '' || text.indexOf(q) !== -1 || card.getAttribute('data-cat').toLowerCase().indexOf(q) !== -1;
+        li.classList.toggle('hidden', !match);
+        if(match){ anyVisible = true; visible++; }
+      });
+      card.classList.toggle('hidden', !anyVisible);
+    });
+    countEl.textContent = q === '' ? (totalEntries + ' members / 14 categories') : (visible + ' of ' + totalEntries + ' match');
+  }
+
+  input.addEventListener('input', apply);
+  apply();
+})();
+</script>
