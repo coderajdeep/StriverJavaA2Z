@@ -1,0 +1,970 @@
+<title>Java Built-in API Field Guide</title>
+<style>
+  :root{
+    --bg:#eef1f4;
+    --surface:#ffffff;
+    --surface-alt:#e3e8ed;
+    --border:#d3dae1;
+    --ink:#172033;
+    --ink-muted:#5c6577;
+    --accent:#0f7a74;
+    --accent-ink:#ffffff;
+    --accent-soft:#d9f0ee;
+    --code-bg:#f4f6f8;
+    --shadow:0 1px 2px rgba(23,32,51,.06), 0 10px 28px rgba(23,32,51,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0e141b;
+      --surface:#151d27;
+      --surface-alt:#1c2530;
+      --border:#2a3543;
+      --ink:#e7ecf1;
+      --ink-muted:#93a1b3;
+      --accent:#4fd1c1;
+      --accent-ink:#06211d;
+      --accent-soft:rgba(79,209,193,.14);
+      --code-bg:#101822;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0e141b;
+    --surface:#151d27;
+    --surface-alt:#1c2530;
+    --border:#2a3543;
+    --ink:#e7ecf1;
+    --ink-muted:#93a1b3;
+    --accent:#4fd1c1;
+    --accent-ink:#06211d;
+    --accent-soft:rgba(79,209,193,.14);
+    --code-bg:#101822;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  code, .mono{
+    font-family:ui-monospace,"Cascadia Code","SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+  }
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px 64px;
+  }
+
+  header{
+    position:sticky;
+    top:0;
+    z-index:5;
+    background:var(--bg);
+    padding:28px 0 16px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:28px;
+  }
+  .eyebrow{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 8px;
+  }
+  h1{
+    font-size:clamp(24px,3.4vw,34px);
+    line-height:1.15;
+    margin:0 0 6px;
+    letter-spacing:-.01em;
+    text-wrap:balance;
+  }
+  .sub{
+    color:var(--ink-muted);
+    font-size:14.5px;
+    margin:0 0 18px;
+    max-width:66ch;
+    line-height:1.5;
+  }
+
+  .toolbar{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+  #search{
+    flex:1 1 320px;
+    min-width:220px;
+    padding:10px 14px;
+    border-radius:8px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    color:var(--ink);
+    font-size:14px;
+    font-family:inherit;
+  }
+  #search:focus{
+    outline:2px solid var(--accent);
+    outline-offset:1px;
+  }
+  #count{
+    font-size:12.5px;
+    color:var(--ink-muted);
+    white-space:nowrap;
+    font-variant-numeric:tabular-nums;
+  }
+  .toggle-all{
+    font-size:12px;
+    font-weight:600;
+    color:var(--accent);
+    background:var(--accent-soft);
+    border:1px solid var(--accent);
+    border-radius:7px;
+    padding:8px 12px;
+    cursor:pointer;
+    white-space:nowrap;
+  }
+  .toggle-all:hover{ filter:brightness(1.05); }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+    gap:16px;
+  }
+
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:10px;
+    box-shadow:var(--shadow);
+    padding:16px 18px 10px;
+    display:flex;
+    flex-direction:column;
+  }
+  .card h2{
+    font-size:15px;
+    margin:0;
+    font-weight:700;
+    letter-spacing:-.01em;
+  }
+  .card .import{
+    font-size:11.5px;
+    color:var(--ink-muted);
+    margin:2px 0 12px;
+  }
+
+  ul.entries{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+  }
+
+  details.entry{
+    border-top:1px solid var(--border);
+  }
+  details.entry:first-child{ border-top:none; }
+  details.entry[open]{
+    padding-bottom:8px;
+  }
+  details.entry.hidden{ display:none; }
+
+  details.entry summary{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:12px;
+    padding:7px 0;
+    cursor:pointer;
+    list-style:none;
+  }
+  details.entry summary::-webkit-details-marker{ display:none; }
+
+  .sig-wrap{
+    display:flex;
+    align-items:baseline;
+    gap:6px;
+    min-width:0;
+  }
+  .chevron{
+    flex-shrink:0;
+    width:9px;
+    height:9px;
+    border-right:1.5px solid var(--ink-muted);
+    border-bottom:1.5px solid var(--ink-muted);
+    transform:rotate(-45deg);
+    transition:transform .15s ease;
+    margin-right:2px;
+  }
+  details.entry[open] .chevron{
+    transform:rotate(45deg);
+  }
+
+  .entry code.sig{
+    font-size:12.8px;
+    color:var(--ink);
+    white-space:nowrap;
+  }
+  .entry .note{
+    font-size:11.5px;
+    color:var(--ink-muted);
+    text-align:right;
+    flex-shrink:2;
+  }
+
+  .example{
+    margin:2px 0 10px 17px;
+    padding:9px 12px;
+    background:var(--code-bg);
+    border:1px solid var(--border);
+    border-radius:6px;
+    font-family:ui-monospace,"Cascadia Code","SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+    font-size:12px;
+    line-height:1.65;
+    color:var(--ink);
+    white-space:pre-wrap;
+    overflow-x:auto;
+    tab-size:2;
+  }
+  .example .p{ color:var(--ink-muted); }
+  .example .r{ color:var(--accent); font-weight:600; }
+
+  .uc-label{
+    margin:0 0 3px 17px;
+    font-size:10.5px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-muted);
+  }
+  .usecases{
+    margin:0 0 10px 17px;
+    padding:8px 12px;
+    background:var(--accent-soft);
+    border-left:2px solid var(--accent);
+    border-radius:0 6px 6px 0;
+    list-style:disc;
+    padding-left:30px;
+  }
+  .usecases li{
+    font-size:12.3px;
+    color:var(--ink);
+    line-height:1.55;
+    padding:2px 0;
+  }
+  .usecases li::marker{ color:var(--accent); }
+
+  footer{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+    color:var(--ink-muted);
+    font-size:12.5px;
+    line-height:1.6;
+  }
+  footer strong{ color:var(--ink); }
+
+  @media (prefers-reduced-motion:no-preference){
+    .card{ transition:box-shadow .15s ease; }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">StriverJavaA2Z &middot; interview revision</p>
+    <h1>Java Built-in API Field Guide</h1>
+    <p class="sub">Every JDK method and property actually used across 222 LeetCode solutions in <code>src/</code> — deduplicated and grouped by class. Expand any entry for a runnable example and when you'd reach for it.</p>
+    <div class="toolbar">
+      <input id="search" type="text" placeholder="Filter — e.g. &quot;merge&quot;, HashMap, poll, substring…" autocomplete="off">
+      <button class="toggle-all" id="toggleAll" type="button">Expand all</button>
+      <span id="count"></span>
+    </div>
+  </header>
+
+  <main class="grid" id="grid">
+
+    <section class="card" data-cat="java.lang.String">
+      <h2>String</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">s.length()</code></span><span class="note">char count</span></summary><div class="example"><span class="p">// returns int — number of chars</span>
+s = "abcdefgh"
+s.length() <span class="r">→ 8</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Loop bounds when scanning a string char by char</li>
+          <li>Palindrome check with two pointers (i vs length-1-i)</li>
+          <li>Base case for recursion on substrings</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">s.charAt(i)</code></span><span class="note">indexed char</span></summary><div class="example"><span class="p">i : int — mandatory (0-based index)</span>
+s = "abcdefgh"
+s.charAt(0) <span class="r">→ 'a'</span>
+s.charAt(3) <span class="r">→ 'd'</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Comparing characters at two pointers in two-pointer / sliding-window problems</li>
+          <li>Building a frequency map of characters</li>
+          <li>Checking the current character during DFS/backtracking over a string</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">s.toCharArray()</code></span><span class="note">to char[]</span></summary><div class="example"><span class="p">// returns char[]</span>
+s = "cba"
+s.toCharArray() <span class="r">→ ['c','b','a']</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Sorting characters to check anagrams</li>
+          <li>In-place-style manipulation that arrays make easier than String</li>
+          <li>Feeding a char[] to <code>Arrays.sort</code> before comparing two strings</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">s.substring(a[,b])</code></span><span class="note">slice</span></summary><div class="example"><span class="p">a : int — mandatory (start, inclusive)
+b : int — optional  (end, exclusive)</span>
+s = "abcdefgh"
+s.substring(3)   <span class="r">→ "defgh"</span>
+s.substring(3,5) <span class="r">→ "de"</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Extracting the sub-problem string for recursive DP (e.g. palindrome partitioning)</li>
+          <li>Splitting a string around a delimiter index found during a scan</li>
+          <li>Isolating a candidate palindromic substring to validate</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">s.split(regex)</code></span><span class="note">tokenize</span></summary><div class="example"><span class="p">regex : String — mandatory (delimiter pattern)
+// returns String[]</span>
+s = "a,b,c"
+s.split(",")  <span class="r">→ ["a","b","c"]</span>
+"1 2  3".split(" +") <span class="r">→ ["1","2","3"]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Parsing space- or comma-separated input into tokens</li>
+          <li>Splitting a sentence into words for word-count / reverse-words problems</li>
+          <li>Breaking a path string like "a/b/../c" into components</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">s.equals(o)</code></span><span class="note">content compare</span></summary><div class="example"><span class="p">o : Object — mandatory
+// returns boolean (compares CONTENT, not reference)</span>
+"abc".equals("abc") <span class="r">→ true</span>
+"abc".equals("abd") <span class="r">→ false</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Comparing string contents safely instead of using <code>==</code></li>
+          <li>Checking two words are identical while building anagram groups</li>
+          <li>Validating parsed tokens against expected keywords</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">s.compareTo(o)</code></span><span class="note">lexicographic</span></summary><div class="example"><span class="p">o : String — mandatory
+// returns int: &lt;0, 0, or &gt;0</span>
+"apple".compareTo("banana") <span class="r">→ -1</span>
+"b".compareTo("a")          <span class="r">→ 1</span>
+"a".compareTo("a")          <span class="r">→ 0</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Custom comparator body when sorting an array of strings</li>
+          <li>Finding lexicographically smallest / largest string among candidates</li>
+          <li>Tie-breaking rules in interval / scheduling problems keyed by string fields</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">s.isEmpty()</code></span><span class="note">"" check</span></summary><div class="example"><span class="p">// returns boolean (true when length == 0)</span>
+"".isEmpty()  <span class="r">→ true</span>
+"a".isEmpty() <span class="r">→ false</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Recursion base case once a substring has been fully consumed</li>
+          <li>Guarding against empty tokens after a split</li>
+          <li>Early-return validation on function entry</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">String.valueOf(x)</code></span><span class="note">char[]/int → String</span></summary><div class="example"><span class="p">x : any (int, char, char[], boolean…) — mandatory
+// static; returns String</span>
+String.valueOf(42)                 <span class="r">→ "42"</span>
+String.valueOf(new char[]{'h','i'}) <span class="r">→ "hi"</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Converting a computed int result to a String for output</li>
+          <li>Turning a char[] back into a String after in-place edits</li>
+          <li>Building a hashable key from a numeric or char value</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new String(char[])</code></span><span class="note">build from chars</span></summary><div class="example"><span class="p">char[] — mandatory
+// constructor; returns String</span>
+new String(new char[]{'h','i'}) <span class="r">→ "hi"</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Materializing a final answer after manipulating a char[] in place</li>
+          <li>Reconstructing a word from a subset of characters</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.lang.StringBuilder">
+      <h2>StringBuilder</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new StringBuilder([s])</code></span><span class="note">ctor</span></summary><div class="example"><span class="p">s : String — optional (initial content)</span>
+new StringBuilder()     <span class="r">→ ""</span>
+new StringBuilder("ab") <span class="r">→ "ab"</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Starting an accumulator for a result string built across many appends</li>
+          <li>Seeding with an existing string before reversing or editing it</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">sb.append(x)</code></span><span class="note">chainable</span></summary><div class="example"><span class="p">x : any — mandatory; returns the same builder (chainable)</span>
+sb = "ab"
+sb.append("c")        <span class="r">→ "abc"</span>
+sb.append('d').append(9) <span class="r">→ "abcd9"</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Accumulating chars/tokens in a loop instead of concatenating Strings (avoids O(n²))</li>
+          <li>Building the current path in DFS/backtracking over a grid or tree</li>
+          <li>Assembling digits during math-to-string conversion</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">sb.toString()</code></span><span class="note">materialize</span></summary><div class="example"><span class="p">// returns String snapshot of current content</span>
+sb = "abc"
+sb.toString() <span class="r">→ "abc"</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Finalizing the builder into the return value</li>
+          <li>Converting to String to store as a key in a Map/Set</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">sb.length()</code></span><span class="note">size</span></summary><div class="example"><span class="p">// returns int</span>
+sb = "abc"
+sb.length() <span class="r">→ 3</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Checking accumulated size before appending a separator</li>
+          <li>Loop bound when scanning the builder's current content</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">sb.isEmpty()</code></span></summary><div class="example"><span class="p">// returns boolean (Java 15+)</span>
+sb = ""
+sb.isEmpty() <span class="r">→ true</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Skipping a leading separator on the first append</li>
+          <li>Guarding output formatting when nothing has been added yet</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">sb.setLength(n)</code></span><span class="note">truncate/backtrack</span></summary><div class="example"><span class="p">n : int — mandatory (new length)</span>
+sb = "abcd"
+sb.setLength(2) <span class="r">→ "ab"</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Undoing the last append during backtracking (cheaper than deleteCharAt)</li>
+          <li>Trimming a trailing separator before converting to String</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">sb.reverse()</code></span></summary><div class="example"><span class="p">// reverses in place, returns the builder</span>
+sb = "abc"
+sb.reverse() <span class="r">→ "cba"</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Reversing digits of an integer built as a string</li>
+          <li>Reversing words / characters for "reverse string" style problems</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">sb.charAt(i)</code></span></summary><div class="example"><span class="p">i : int — mandatory (index)</span>
+sb = "abc"
+sb.charAt(1) <span class="r">→ 'b'</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Inspecting a character mid-build without materializing a String</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">sb.setCharAt(i,c)</code></span></summary><div class="example"><span class="p">i : int  — mandatory (index)
+c : char — mandatory (replacement)</span>
+sb = "abc"
+sb.setCharAt(1,'X') <span class="r">→ "aXc"</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Flipping a single digit/character in place (e.g. carrying an addition)</li>
+          <li>Patching one position after a comparison, without rebuilding the whole string</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.lang.Math">
+      <h2>Math</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Math.max(a,b)</code></span></summary><div class="example"><span class="p">a, b : int/long/double — mandatory; returns the larger</span>
+Math.max(3, 7)   <span class="r">→ 7</span>
+Math.max(-2, -9) <span class="r">→ -2</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Tracking a running maximum in DP transitions (max subarray / profit)</li>
+          <li>Expanding a sliding window's right bound</li>
+          <li>Picking the larger of two recursive branch results</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Math.min(a,b)</code></span></summary><div class="example"><span class="p">a, b : int/long/double — mandatory; returns the smaller</span>
+Math.min(3, 7) <span class="r">→ 3</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Tracking a running minimum (min cost path, buy price for stock problems)</li>
+          <li>Clamping an index so it doesn't exceed array bounds</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Math.abs(x)</code></span></summary><div class="example"><span class="p">x : int/long/double — mandatory; returns |x|</span>
+Math.abs(-4) <span class="r">→ 4</span>
+Math.abs(4)  <span class="r">→ 4</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Computing distance / absolute difference between two values</li>
+          <li>Normalizing a negative modulo result</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Math.ceil(x)</code></span></summary><div class="example"><span class="p">x : double — mandatory; returns double rounded UP</span>
+Math.ceil(2.1) <span class="r">→ 3.0</span>
+Math.ceil(2.0) <span class="r">→ 2.0</span>
+<span class="p">// integer ceil of a/b:</span> (a + b - 1) / b</div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Computing binary-search midpoints / bounds that must round up</li>
+          <li>Calculating page / group counts from a total split into chunks</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.lang.Integer">
+      <h2>Integer / wrappers</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Integer.MAX_VALUE</code></span><span class="note">sentinel</span></summary><div class="example"><span class="p">// constant int</span>
+Integer.MAX_VALUE <span class="r">→ 2147483647</span>
+int best = Integer.MAX_VALUE; <span class="p">// seed a running min</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Initializing a "running minimum" variable before the first comparison</li>
+          <li>Sentinel for "infinity" in shortest-path / DP cost arrays</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Integer.MIN_VALUE</code></span><span class="note">sentinel</span></summary><div class="example"><span class="p">// constant int</span>
+Integer.MIN_VALUE <span class="r">→ -2147483648</span>
+int best = Integer.MIN_VALUE; <span class="p">// seed a running max</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Initializing a "running maximum" variable before the first comparison</li>
+          <li>Sentinel for "negative infinity" in max-subarray style DP</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Integer.compare(a,b)</code></span><span class="note">comparator body</span></summary><div class="example"><span class="p">a, b : int — mandatory; returns -1 / 0 / 1 (overflow-safe)</span>
+Integer.compare(3, 7) <span class="r">→ -1</span>
+Integer.compare(7, 3) <span class="r">→ 1</span>
+Integer.compare(5, 5) <span class="r">→ 0</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Body of a lambda comparator when sorting boxed Integer arrays/lists</li>
+          <li>Avoiding overflow vs. hand-writing <code>a-b</code> in a comparator</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Integer.parseInt(s)</code></span></summary><div class="example"><span class="p">s : String — mandatory; returns int (throws if non-numeric)</span>
+Integer.parseInt("42")  <span class="r">→ 42</span>
+Integer.parseInt("-7")  <span class="r">→ -7</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Converting a split token from input text into a usable int</li>
+          <li>Parsing digits out of a string-based math problem</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Integer.toString(i)</code></span></summary><div class="example"><span class="p">i : int — mandatory; returns String</span>
+Integer.toString(42) <span class="r">→ "42"</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Converting a computed int to String for concatenation or output</li>
+          <li>Building a hash key that mixes numbers and text</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Integer::sum</code></span><span class="note">BiFunction for merge()</span></summary><div class="example"><span class="p">// method reference == (a,b) -&gt; a + b</span>
+Integer.sum(2, 3) <span class="r">→ 5</span>
+map.merge(k, 1, Integer::sum) <span class="p">// count++ in one call</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Method reference passed to <code>map.merge(k, 1, Integer::sum)</code> for frequency counting</li>
+          <li>Combining accumulated totals in a reduce-style aggregation</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.lang.Character">
+      <h2>Character</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Character.isDigit(c)</code></span></summary><div class="example"><span class="p">c : char — mandatory; returns boolean</span>
+Character.isDigit('7') <span class="r">→ true</span>
+Character.isDigit('a') <span class="r">→ false</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Validating characters while parsing numbers embedded in a string</li>
+          <li>Skipping / keeping digit characters when filtering a string</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Character.isLetterOrDigit(c)</code></span></summary><div class="example"><span class="p">c : char — mandatory; returns boolean</span>
+Character.isLetterOrDigit('a') <span class="r">→ true</span>
+Character.isLetterOrDigit('#') <span class="r">→ false</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Filtering out punctuation / spaces before a palindrome check ("valid palindrome")</li>
+          <li>Validating alphanumeric-only strings</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.lang.System array">
+      <h2>System &amp; array property</h2>
+      <div class="import">java.lang</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">arr.length</code></span><span class="note">1D / 2D — everywhere</span></summary><div class="example"><span class="p">// field, not a method — no ()</span>
+int[] arr = {5, 6, 7};
+arr.length     <span class="r">→ 3</span>
+int[][] grid = new int[4][6];
+grid.length    <span class="r">→ 4   // rows</span>
+grid[0].length <span class="r">→ 6   // cols</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Loop bounds for any array traversal, 1D or 2D (rows / cols)</li>
+          <li>Base case / termination check in recursive array processing</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">System.arraycopy(src,sp,dst,dp,len)</code></span><span class="note">row copy, space-opt DP</span></summary><div class="example"><span class="p">src : source array      sp : src start index
+dst : destination array dp : dst start index
+len : count to copy</span>
+int[] src = {1,2,3,4};
+int[] dst = new int[4];
+System.arraycopy(src,1,dst,0,3);
+dst <span class="r">→ {2,3,4,0}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Copying a DP row forward when reducing a 2D table to O(n) space</li>
+          <li>Fast bulk-copying a row / column out of a 2D grid</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">System.out.print/println(x)</code></span></summary><div class="example"><span class="p">x : any — mandatory</span>
+System.out.print("hi")   <span class="r">→ hi</span>   <span class="p">// no newline</span>
+System.out.println("hi") <span class="r">→ hi\n</span> <span class="p">// with newline</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Debug-printing intermediate state while tracing an algorithm</li>
+          <li>Printing the final answer in a driver / main method</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.Arrays">
+      <h2>Arrays</h2>
+      <div class="import">java.util.Arrays</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Arrays.sort(arr)</code></span></summary><div class="example"><span class="p">arr : array — mandatory; sorts ASCENDING in place</span>
+int[] arr = {3, 1, 2};
+Arrays.sort(arr);
+arr <span class="r">→ {1, 2, 3}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Sorting a primitive array before a two-pointer or greedy pass</li>
+          <li>Preparing values for binary search</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Arrays.sort(arr, cmp)</code></span><span class="note">object/2D arrays</span></summary><div class="example"><span class="p">arr : Object[] / 2D array   cmp : Comparator
+// NOTE: comparator needs boxed/objects, not int[]</span>
+Integer[] a = {3, 1, 2};
+Arrays.sort(a, (x, y) -> y - x);  <span class="p">// descending</span>
+a <span class="r">→ {3, 2, 1}</span>
+<span class="p">// intervals sorted by start:</span>
+Arrays.sort(iv, (p, q) -> p[0] - q[0]);</div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Sorting intervals by start time before a merge-intervals pass</li>
+          <li>Sorting a 2D array of pairs (e.g. by second column) for greedy scheduling</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Arrays.fill(arr, v)</code></span><span class="note">sentinel init, e.g. -1</span></summary><div class="example"><span class="p">arr : array   v : fill value — both mandatory</span>
+int[] dp = new int[4];
+Arrays.fill(dp, -1);
+dp <span class="r">→ {-1, -1, -1, -1}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Initializing a memo / DP array to -1 to mark "uncomputed"</li>
+          <li>Resetting a visited / distance array before a BFS/DFS run</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.Collections">
+      <h2>Collections</h2>
+      <div class="import">java.util.Collections</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Collections.reverse(list)</code></span></summary><div class="example"><span class="p">list : List — mandatory; reverses in place</span>
+List&lt;Integer&gt; l = [1, 2, 3];
+Collections.reverse(l);
+l <span class="r">→ [3, 2, 1]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Reversing a result list built root-to-leaf back into leaf-to-root order</li>
+          <li>Reversing a path collected during backtracking before returning it</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Collections.sort(list)</code></span></summary><div class="example"><span class="p">list : List — mandatory; ascending, in place</span>
+List&lt;Integer&gt; l = [3, 1, 2];
+Collections.sort(l);
+l <span class="r">→ [1, 2, 3]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Sorting a List in natural order before scanning it</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Collections.sort(list, cmp)</code></span></summary><div class="example"><span class="p">list : List   cmp : Comparator — both mandatory</span>
+List&lt;Integer&gt; l = [3, 1, 2];
+Collections.sort(l, (a, b) -> b - a);
+l <span class="r">→ [3, 2, 1]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Sorting a List of custom objects / pairs by a chosen field</li>
+          <li>Applying tie-breaking rules via a multi-key comparator</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.List ArrayList">
+      <h2>List / ArrayList</h2>
+      <div class="import">java.util.{List, ArrayList}</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new ArrayList&lt;&gt;()</code></span></summary><div class="example"><span class="p">// empty, growable list</span>
+List&lt;Integer&gt; l = new ArrayList&lt;&gt;();
+l <span class="r">→ []</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Starting an empty result container to fill during traversal</li>
+          <li>Building an adjacency-list bucket for a graph node</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new ArrayList&lt;&gt;(coll)</code></span><span class="note">copy-ctor / snapshot</span></summary><div class="example"><span class="p">coll : Collection — mandatory (copies its elements)</span>
+new ArrayList&lt;&gt;(List.of(1, 2)) <span class="r">→ [1, 2]</span>
+res.add(new ArrayList&lt;&gt;(path)); <span class="p">// snapshot in backtracking</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Taking an immutable snapshot of the current backtracking path before adding it to results</li>
+          <li>Copying a collection to safely mutate it independently</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.add(e)</code></span></summary><div class="example"><span class="p">e : element — mandatory; appends to end</span>
+l = [1];
+l.add(2);
+l <span class="r">→ [1, 2]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Appending to a result list or DFS/backtracking path</li>
+          <li>Growing an adjacency-list entry for a graph edge</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.addAll(coll)</code></span></summary><div class="example"><span class="p">coll : Collection — mandatory; appends all</span>
+l = [1];
+l.addAll(List.of(2, 3));
+l <span class="r">→ [1, 2, 3]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Merging one sub-result list into an aggregate results list</li>
+          <li>Combining neighbor lists during graph construction</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.get(i)</code></span></summary><div class="example"><span class="p">i : int — mandatory (index); returns element</span>
+l = [10, 20, 30];
+l.get(1) <span class="r">→ 20</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Random access into a list during DP or two-pointer scans</li>
+          <li>Reading a neighbor from an adjacency list during graph traversal</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.set(i, v)</code></span></summary><div class="example"><span class="p">i : int (index)   v : new value — both mandatory</span>
+l = [1, 2, 3];
+l.set(0, 9);
+l <span class="r">→ [9, 2, 3]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Updating a DP table cell stored as a List instead of an array</li>
+          <li>Overwriting a value in place during simulation</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.remove(i)</code></span><span class="note">backtracking pop</span></summary><div class="example"><span class="p">i : int — removes by INDEX (not value, for int lists)</span>
+l = [1, 2, 3];
+l.remove(l.size() - 1); <span class="p">// pop last</span>
+l <span class="r">→ [1, 2]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Undoing the last <code>add</code> when backtracking out of a DFS branch</li>
+          <li>Removing a processed element from a working list</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.size()</code></span></summary><div class="example"><span class="p">// returns int</span>
+l = [1, 2, 3];
+l.size() <span class="r">→ 3</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Loop bound when iterating a List</li>
+          <li>Checking the current depth of a backtracking path against target length</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.isEmpty()</code></span></summary><div class="example"><span class="p">// returns boolean</span>
+[].isEmpty()    <span class="r">→ true</span>
+[1].isEmpty()   <span class="r">→ false</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Base case check before recursing further</li>
+          <li>Guarding against processing an empty adjacency bucket</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.sort(cmp)</code></span></summary><div class="example"><span class="p">cmp : Comparator — mandatory; sorts in place</span>
+l = [3, 1, 2];
+l.sort((a, b) -> a - b);
+l <span class="r">→ [1, 2, 3]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Sorting a list in place with a custom comparator before a greedy / two-pointer pass</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">List.of(...)</code></span><span class="note">immutable factory</span></summary><div class="example"><span class="p">varargs — returns an IMMUTABLE list (add() throws)</span>
+List.of(1, 2, 3) <span class="r">→ [1, 2, 3]</span>
+int[][] dirs = {{0,1},{1,0},{0,-1},{-1,0}}; <span class="p">// grid moves</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Quickly constructing a fixed, read-only literal list (e.g. direction pairs for grid traversal)</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.Map HashMap TreeMap">
+      <h2>Map / HashMap / TreeMap</h2>
+      <div class="import">java.util.{Map, HashMap, TreeMap}</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new HashMap&lt;&gt;()</code></span></summary><div class="example"><span class="p">// empty map, O(1) average get/put, no key order</span>
+Map&lt;String,Integer&gt; m = new HashMap&lt;&gt;();
+m <span class="r">→ {}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Building a frequency map for characters / numbers</li>
+          <li>Memoization cache keyed by recursive-call parameters</li>
+          <li>Index map for two-sum style "value → index" lookups</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new TreeMap&lt;&gt;([cmp])</code></span><span class="note">sorted keys</span></summary><div class="example"><span class="p">cmp : Comparator — optional; keys kept SORTED, O(log n)</span>
+TreeMap&lt;Integer,String&gt; t = new TreeMap&lt;&gt;();
+t.put(3,"c"); t.put(1,"a"); t.put(2,"b");
+t.keySet()      <span class="r">→ [1, 2, 3]</span>
+t.firstKey()    <span class="r">→ 1</span>
+t.ceilingKey(2) <span class="r">→ 2</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Keeping keys sorted automatically for range queries (calendar / interval books)</li>
+          <li>Finding nearest key via floorKey / ceilingKey navigation</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">map.put(k,v)</code></span></summary><div class="example"><span class="p">k : key   v : value — both mandatory (overwrites if present)</span>
+m.put("a", 1);
+m <span class="r">→ {"a"=1}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Inserting / updating a frequency count or memo result</li>
+          <li>Recording parent / visited info during BFS/DFS</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">map.get(k)</code></span></summary><div class="example"><span class="p">k : key — mandatory; returns value or null if absent</span>
+m = {"a"=1};
+m.get("a") <span class="r">→ 1</span>
+m.get("b") <span class="r">→ null</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Looking up a previously memoized subproblem result</li>
+          <li>Reading a stored index / count for a given key</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">map.getOrDefault(k,d)</code></span></summary><div class="example"><span class="p">k : key   d : default when absent — both mandatory</span>
+m = {"a"=1};
+m.getOrDefault("a", 0) <span class="r">→ 1</span>
+m.getOrDefault("b", 0) <span class="r">→ 0</span>
+m.put(c, m.getOrDefault(c,0) + 1); <span class="p">// count</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Frequency counting with a default of 0 when the key hasn't been seen</li>
+          <li>Reading a memoized value with a safe fallback instead of null</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">map.containsKey(k)</code></span></summary><div class="example"><span class="p">k : key — mandatory; returns boolean</span>
+m = {"a"=1};
+m.containsKey("a") <span class="r">→ true</span>
+m.containsKey("b") <span class="r">→ false</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Checking two-sum style complement lookups</li>
+          <li>Checking whether a subproblem has already been memoized</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">map.computeIfAbsent(k,fn)</code></span></summary><div class="example"><span class="p">k : key   fn : Function computing the value if missing</span>
+Map&lt;Integer,List&lt;Integer&gt;&gt; g = new HashMap&lt;&gt;();
+g.computeIfAbsent(0, x -> new ArrayList&lt;&gt;()).add(1);
+g <span class="r">→ {0=[1]}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Lazily creating an adjacency-list bucket the first time a node is referenced</li>
+          <li>Grouping items into buckets (e.g. group anagrams by sorted-key)</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">map.merge(k,v,fn)</code></span><span class="note">null return removes key</span></summary><div class="example"><span class="p">k : key   v : value if absent   fn : how to combine if present</span>
+m = {"a"=2};
+m.merge("a", 1, Integer::sum); <span class="p">// 2 + 1</span>
+m <span class="r">→ {"a"=3}</span>
+m.merge("b", 1, Integer::sum);
+m <span class="r">→ {"a"=3, "b"=1}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Incrementing a frequency counter in one call via <code>Integer::sum</code></li>
+          <li>Combining values for a key that may or may not already exist</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">map.values()</code></span></summary><div class="example"><span class="p">// returns Collection of all values</span>
+m = {"a"=1, "b"=2};
+m.values() <span class="r">→ [1, 2]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Iterating all frequency counts to check a condition (e.g. all counts equal)</li>
+          <li>Summing or scanning stored values without needing the keys</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">map.entrySet()</code></span></summary><div class="example"><span class="p">// returns Set of Map.Entry pairs</span>
+for (var e : m.entrySet())
+    <span class="p">// e.getKey(), e.getValue()</span>
+m = {"a"=1}; m.entrySet() <span class="r">→ [a=1]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Iterating key-value pairs together, e.g. pushing all (freq, char) into a heap</li>
+          <li>Rebuilding a result list from accumulated map data</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">entry.getKey()/getValue()</code></span></summary><div class="example"><span class="p">// on a Map.Entry from entrySet()</span>
+entry = (a=1);
+entry.getKey()   <span class="r">→ "a"</span>
+entry.getValue() <span class="r">→ 1</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Extracting the character / count pair while iterating <code>entrySet()</code></li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">map.size()</code></span></summary><div class="example"><span class="p">// returns int (number of keys)</span>
+m = {"a"=1, "b"=2};
+m.size() <span class="r">→ 2</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Checking the number of distinct keys, e.g. distinct characters seen</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.Set HashSet">
+      <h2>Set / HashSet</h2>
+      <div class="import">java.util.{Set, HashSet}</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new HashSet&lt;&gt;()</code></span></summary><div class="example"><span class="p">// empty set, O(1) add / contains, unique elements</span>
+Set&lt;Integer&gt; s = new HashSet&lt;&gt;();
+s <span class="r">→ {}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Tracking visited nodes / cells during BFS/DFS</li>
+          <li>Deduplicating elements while building a result</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new HashSet&lt;&gt;(coll)</code></span><span class="note">dedupe a List</span></summary><div class="example"><span class="p">coll : Collection — mandatory (duplicates collapse)</span>
+new HashSet&lt;&gt;(List.of(1, 1, 2)) <span class="r">→ {1, 2}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Quickly deduplicating a List's contents in one step</li>
+          <li>Converting a List to a Set for O(1) membership checks later</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">set.add(e)</code></span></summary><div class="example"><span class="p">e : element — mandatory; returns false if already present</span>
+s = {};
+s.add(5) <span class="r">→ true  {5}</span>
+s.add(5) <span class="r">→ false {5}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Marking a node / cell as visited</li>
+          <li>Adding a candidate to a "seen" set for duplicate detection</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">set.contains(e)</code></span></summary><div class="example"><span class="p">e : element — mandatory; returns boolean</span>
+s = {5};
+s.contains(5) <span class="r">→ true</span>
+s.contains(9) <span class="r">→ false</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>O(1) membership test, e.g. "has this character been used in this path already?"</li>
+          <li>Checking whether a cell has already been visited before recursing into it</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">set.remove(e)</code></span></summary><div class="example"><span class="p">e : element — mandatory; returns false if absent</span>
+s = {5, 6};
+s.remove(5);
+s <span class="r">→ {6}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Un-marking a node as visited when backtracking out of a DFS branch</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.Queue Deque ArrayDeque Stack">
+      <h2>Queue / Deque / ArrayDeque</h2>
+      <div class="import">java.util.{Queue, Deque, ArrayDeque, LinkedList}</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new ArrayDeque&lt;&gt;()</code></span><span class="note">doubles as stack or queue</span></summary><div class="example"><span class="p">// preferred stack AND queue; faster than Stack/LinkedList</span>
+Deque&lt;Integer&gt; dq = new ArrayDeque&lt;&gt;();
+dq <span class="r">→ []</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Iterative DFS using it as a stack (push / pop)</li>
+          <li>BFS using it as a queue (offer / poll)</li>
+          <li>Monotonic stack / deque problems (next greater element, sliding-window max)</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new LinkedList&lt;&gt;()</code></span><span class="note">as Queue, BFS</span></summary><div class="example"><span class="p">// implements Queue and Deque</span>
+Queue&lt;int[]&gt; q = new LinkedList&lt;&gt;();
+q <span class="r">→ []</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Queue for level-order BFS traversal of a tree or graph</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">dq.push(e) / dq.pop()</code></span><span class="note">stack semantics</span></summary><div class="example"><span class="p">push adds to FRONT, pop removes FRONT → LIFO</span>
+dq.push(1); dq.push(2);
+dq.pop() <span class="r">→ 2</span>
+dq.pop() <span class="r">→ 1</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Iterative DFS / backtracking without recursion</li>
+          <li>Bracket-matching / expression evaluation</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">q.offer(e) / q.poll()</code></span><span class="note">queue semantics</span></summary><div class="example"><span class="p">offer adds to BACK, poll removes FRONT → FIFO
+// poll() returns null when empty (no exception)</span>
+q.offer(1); q.offer(2);
+q.poll() <span class="r">→ 1</span>
+q.poll() <span class="r">→ 2</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Enqueuing / dequeuing nodes level by level in BFS</li>
+          <li>Processing work items in FIFO order (topological sort via Kahn's algorithm)</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">peek()</code></span></summary><div class="example"><span class="p">// returns front/top WITHOUT removing; null if empty</span>
+dq = [1, 2, 3];  <span class="p">// front = 1</span>
+dq.peek() <span class="r">→ 1</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Checking the front / top element without removing it (top of monotonic stack)</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">isEmpty()</code></span></summary><div class="example"><span class="p">// returns boolean</span>
+while (!q.isEmpty()) { ... } <span class="p">// drain the queue</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Loop condition for "while queue / stack not empty" traversal</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">size()</code></span></summary><div class="example"><span class="p">// returns int</span>
+int levelSize = q.size(); <span class="p">// nodes on this BFS level</span>
+for (int i = 0; i &lt; levelSize; i++) { ... }</div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Capturing the current level's node count in BFS before processing it</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+    <section class="card" data-cat="java.util.PriorityQueue">
+      <h2>PriorityQueue</h2>
+      <div class="import">java.util.PriorityQueue</div>
+      <ul class="entries">
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new PriorityQueue&lt;&gt;()</code></span><span class="note">min-heap, natural order</span></summary><div class="example"><span class="p">// default = MIN-heap (smallest polled first)</span>
+PriorityQueue&lt;Integer&gt; pq = new PriorityQueue&lt;&gt;();
+pq.offer(5); pq.offer(1); pq.offer(3);
+pq.poll() <span class="r">→ 1</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Dijkstra's algorithm, always expanding the smallest known distance</li>
+          <li>Finding the k smallest elements</li>
+          <li>Merging k sorted lists by always taking the smallest head</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new PriorityQueue&lt;&gt;((a,b)-&gt;...)</code></span><span class="note">custom order, e.g. max-heap</span></summary><div class="example"><span class="p">cmp : Comparator — reverse it for a MAX-heap</span>
+var pq = new PriorityQueue&lt;Integer&gt;((a, b) -> b - a);
+pq.offer(5); pq.offer(1); pq.offer(3);
+pq.poll() <span class="r">→ 5</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Max-heap for k largest elements or top-k frequent elements</li>
+          <li>Ordering intervals by end time for greedy scheduling</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">pq.offer(x)</code></span></summary><div class="example"><span class="p">x : element — mandatory; inserts, O(log n)</span>
+pq.offer(4); <span class="p">// heap re-orders automatically</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Inserting a new candidate / distance / frequency into the heap</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">pq.poll()</code></span></summary><div class="example"><span class="p">// removes AND returns the top (min or per comparator); null if empty</span>
+pq = min-heap {1, 3, 5};
+pq.poll() <span class="r">→ 1</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Extracting the current min / max — e.g. next closest node in Dijkstra</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">pq.peek()</code></span></summary><div class="example"><span class="p">// returns top WITHOUT removing; null if empty</span>
+pq = min-heap {1, 3, 5};
+pq.peek() <span class="r">→ 1</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Checking the current top without removing it (e.g. current kth largest)</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">pq.isEmpty()</code></span></summary><div class="example"><span class="p">// returns boolean</span>
+while (!pq.isEmpty()) { pq.poll(); }</div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Loop condition for "while heap not empty" processing</li>
+        </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">pq.size()</code></span></summary><div class="example"><span class="p">// returns int</span>
+if (pq.size() &gt; k) pq.poll(); <span class="p">// keep heap capped at k</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Maintaining a heap capped at size k (poll when size exceeds k)</li>
+        </ul></details></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>Coverage:</strong> all 222 <code>.java</code> files under <code>src/</code> — Array (42), BinarySearch/BinarySearchTree/Tries (31), BinaryTree (30), DP (35), Graph/Heap (27), LinkedList/Recursion/SlidingWindowAndTwoPointer/StackQueue (56). User-defined classes and methods (e.g. <code>ListNode</code>, custom <code>Solution</code> helpers) are excluded — this is JDK API surface only.</p>
+    <p>Notably absent anywhere in the codebase: <code>java.util.stream</code>, <code>Comparator.comparingInt</code>-style static factories, <code>LinkedHashMap</code>/<code>LinkedHashSet</code>, <code>Objects</code>, and the standalone <code>Stack</code> class (its role is played by <code>ArrayDeque</code> throughout).</p>
+    <p>Each dropdown shows a runnable example (parameters, then calls with their <span style="color:var(--accent);font-weight:600">→</span> outputs) and common interview use cases — click a row to expand.</p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var input = document.getElementById('search');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var countEl = document.getElementById('count');
+  var totalEntries = document.querySelectorAll('.entry').length;
+  var toggleAllBtn = document.getElementById('toggleAll');
+  var expanded = false;
+
+  function apply(){
+    var q = input.value.trim().toLowerCase();
+    var visible = 0;
+    cards.forEach(function(card){
+      var entries = card.querySelectorAll('.entry');
+      var anyVisible = false;
+      entries.forEach(function(li){
+        var text = li.textContent.toLowerCase();
+        var match = q === '' || text.indexOf(q) !== -1 || card.getAttribute('data-cat').toLowerCase().indexOf(q) !== -1;
+        li.classList.toggle('hidden', !match);
+        if(match){
+          anyVisible = true;
+          visible++;
+          if(q !== ''){ li.open = true; }
+        }
+      });
+      card.classList.toggle('hidden', !anyVisible);
+    });
+    countEl.textContent = q === '' ? (totalEntries + ' members / 14 categories') : (visible + ' of ' + totalEntries + ' match');
+  }
+
+  toggleAllBtn.addEventListener('click', function(){
+    expanded = !expanded;
+    document.querySelectorAll('.entry').forEach(function(d){ d.open = expanded; });
+    toggleAllBtn.textContent = expanded ? 'Collapse all' : 'Expand all';
+  });
+
+  input.addEventListener('input', apply);
+  apply();
+})();
+</script>
