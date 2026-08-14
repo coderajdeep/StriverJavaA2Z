@@ -833,7 +833,11 @@ s <span class="r">→ {6}</span></div><p class="uc-label">Use cases</p><ul class
       <ul class="entries">
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new ArrayDeque&lt;&gt;()</code></span><span class="note">doubles as stack or queue</span></summary><div class="example"><span class="p">// preferred stack AND queue; faster than Stack/LinkedList</span>
 Deque&lt;Integer&gt; dq = new ArrayDeque&lt;&gt;();
-dq <span class="r">→ []</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+dq <span class="r">→ []</span>
+
+<span class="p">// ArrayDeque also satisfies the Queue interface</span>
+Queue&lt;Integer&gt; queue = new ArrayDeque&lt;&gt;();
+queue <span class="r">→ []</span></div><p class="uc-label">Use cases</p><ul class="usecases">
           <li>Iterative DFS using it as a stack (push / pop)</li>
           <li>BFS using it as a queue (offer / poll)</li>
           <li>Monotonic stack / deque problems (next greater element, sliding-window max)</li>
@@ -854,22 +858,31 @@ dq.pop() <span class="r">→ 1</span></div><p class="uc-label">Use cases</p><ul 
 // poll() returns null when empty (no exception)</span>
 q.offer(1); q.offer(2);
 q.poll() <span class="r">→ 1</span>
-q.poll() <span class="r">→ 2</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+q.poll() <span class="r">→ 2</span>
+
+<span class="p">// same via a Queue-typed ArrayDeque</span>
+queue.offer(1); queue.offer(2);
+queue.poll() <span class="r">→ 1</span></div><p class="uc-label">Use cases</p><ul class="usecases">
           <li>Enqueuing / dequeuing nodes level by level in BFS</li>
           <li>Processing work items in FIFO order (topological sort via Kahn's algorithm)</li>
         </ul></details></li>
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">peek()</code></span></summary><div class="example"><span class="p">// returns front/top WITHOUT removing; null if empty</span>
 dq = [1, 2, 3];  <span class="p">// front = 1</span>
-dq.peek() <span class="r">→ 1</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+dq.peek() <span class="r">→ 1</span>
+
+queue = [1, 2, 3];  <span class="p">// front = 1</span>
+queue.peek() <span class="r">→ 1</span></div><p class="uc-label">Use cases</p><ul class="usecases">
           <li>Checking the front / top element without removing it (top of monotonic stack)</li>
         </ul></details></li>
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">isEmpty()</code></span></summary><div class="example"><span class="p">// returns boolean</span>
-while (!q.isEmpty()) { ... } <span class="p">// drain the queue</span></div><p class="uc-label">Use cases</p><ul class="usecases">
+while (!q.isEmpty()) { ... } <span class="p">// drain the queue</span>
+while (!queue.isEmpty()) { ... } <span class="p">// same check via Queue reference</span></div><p class="uc-label">Use cases</p><ul class="usecases">
           <li>Loop condition for "while queue / stack not empty" traversal</li>
         </ul></details></li>
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">size()</code></span></summary><div class="example"><span class="p">// returns int</span>
 int levelSize = q.size(); <span class="p">// nodes on this BFS level</span>
-for (int i = 0; i &lt; levelSize; i++) { ... }</div><p class="uc-label">Use cases</p><ul class="usecases">
+for (int i = 0; i &lt; levelSize; i++) { ... }
+int n = queue.size(); <span class="p">// same via Queue reference</span></div><p class="uc-label">Use cases</p><ul class="usecases">
           <li>Capturing the current level's node count in BFS before processing it</li>
         </ul></details></li>
       </ul>

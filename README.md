@@ -817,6 +817,10 @@ s → {6}
 // preferred stack AND queue; faster than Stack/LinkedList
 Deque<Integer> dq = new ArrayDeque<>();
 dq → []
+
+// ArrayDeque also satisfies the Queue interface
+Queue<Integer> queue = new ArrayDeque<>();
+queue → []
 ```
 **Use cases**
 - Iterative DFS using it as a stack (push / pop)
@@ -850,6 +854,10 @@ offer adds to BACK, poll removes FRONT → FIFO
 q.offer(1); q.offer(2);
 q.poll() → 1
 q.poll() → 2
+
+// same via a Queue-typed ArrayDeque
+queue.offer(1); queue.offer(2);
+queue.poll() → 1
 ```
 **Use cases**
 - Enqueuing / dequeuing nodes level by level in BFS
@@ -860,6 +868,9 @@ q.poll() → 2
 // returns front/top WITHOUT removing; null if empty
 dq = [1, 2, 3];  // front = 1
 dq.peek() → 1
+
+queue = [1, 2, 3];  // front = 1
+queue.peek() → 1
 ```
 **Use cases**
 - Checking the front / top element without removing it (top of monotonic stack)
@@ -868,6 +879,7 @@ dq.peek() → 1
 ```
 // returns boolean
 while (!q.isEmpty()) { ... } // drain the queue
+while (!queue.isEmpty()) { ... } // same check via Queue reference
 ```
 **Use cases**
 - Loop condition for "while queue / stack not empty" traversal
@@ -877,6 +889,7 @@ while (!q.isEmpty()) { ... } // drain the queue
 // returns int
 int levelSize = q.size(); // nodes on this BFS level
 for (int i = 0; i < levelSize; i++) { ... }
+int n = queue.size(); // same via Queue reference
 ```
 **Use cases**
 - Capturing the current level's node count in BFS before processing it
