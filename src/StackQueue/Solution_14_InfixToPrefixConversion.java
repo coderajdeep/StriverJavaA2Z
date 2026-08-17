@@ -89,4 +89,65 @@ public class Solution_14_InfixToPrefixConversion {
         }
         return 0;
     }
+    public static class Infix2Prefix {
+        public String infixToPrefix(String s) {
+            String postfix = infixToPostfix(s);
+            return postfixToPrefix(postfix);
+        }
+        private String postfixToPrefix(String s) {
+            Deque<String> stack = new ArrayDeque<> ();
+            for (char ch : s.toCharArray()) {
+                if (Character.isLetterOrDigit(ch)) {
+                    stack.push(String.valueOf(ch));
+                }
+                else {
+                    String s2 = stack.pop();
+                    String s1 = stack.pop();
+                    stack.push(ch + s1 + s2);
+                }
+            }
+            return stack.pop();
+        }
+        private String infixToPostfix(String s) {
+            Deque<Character> stack = new ArrayDeque<> ();
+            StringBuilder result = new StringBuilder();
+            for (char ch : s.toCharArray()) {
+                if (Character.isLetterOrDigit(ch)) {
+                    result.append(ch);
+                }
+                else if (ch == '(') {
+                    stack.push(ch);
+                }
+                else if (ch == ')') {
+                    while (!stack.isEmpty() && stack.peek() != '(') {
+                        result.append(stack.pop());
+                    }
+                    stack.pop();
+                }
+                else {
+                    while (!stack.isEmpty() && shouldPop(ch, stack.peek())) {
+                        result.append(stack.pop());
+                    }
+                    stack.push(ch);
+                }
+            }
+            while (!stack.isEmpty()) {
+                result.append(stack.pop());
+            }
+            return result.toString();
+        }
+        private int getPrecedence(char ch) {
+            return switch(ch) {
+                case '+', '-' -> 1;
+                case '*', '/' -> 2;
+                case '^' -> 3;
+                default -> 0;
+            };
+        }
+        private boolean shouldPop(char curr, char peek) {
+            int currPrecedence = getPrecedence(curr);
+            int peekPrecedence = getPrecedence(peek);
+            return (currPrecedence < peekPrecedence) || (currPrecedence == peekPrecedence && curr != '^');
+        }
+    }
 }

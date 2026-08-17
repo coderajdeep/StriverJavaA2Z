@@ -638,6 +638,12 @@ res.add(new ArrayList&lt;&gt;(path)); <span class="p">// snapshot in backtrackin
           <li>Taking an immutable snapshot of the current backtracking path before adding it to results</li>
           <li>Copying a collection to safely mutate it independently</li>
         </ul></details></li>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new ArrayList&lt;&gt;(Collections.nCopies(n, v))</code></span><span class="note">fixed-size, pre-filled</span></summary><div class="example"><span class="p">n : int (size)   v : fill value — both mandatory; MUTABLE (unlike Collections.nCopies alone)</span>
+new ArrayList&lt;&gt;(Collections.nCopies(5, 0)) <span class="r">→ [0, 0, 0, 0, 0]</span>
+List&lt;Integer&gt; dp = new ArrayList&lt;&gt;(Collections.nCopies(n, -1));</div><p class="uc-label">Use cases</p><ul class="usecases">
+          <li>Allocating a DP array/list of known size initialized to a sentinel value (e.g. -1 for "unvisited")</li>
+          <li>Pre-sizing a result list you plan to fill by index via <code>set(i, v)</code> instead of <code>add</code></li>
+        </ul></details></li>
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.add(e)</code></span></summary><div class="example"><span class="p">e : element — mandatory; appends to end</span>
 l = [1];
 l.add(2);

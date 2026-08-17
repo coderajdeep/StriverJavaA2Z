@@ -3,7 +3,7 @@ package StackQueue;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class Solution_09_InfixToPostfixConversion {
+public class Solution_09_InfixToPostfix {
     // Time complexity O(n)
     // Space complexity O(n)
     public String infixToPostfix(String s) {
@@ -112,6 +112,7 @@ public class Solution_09_InfixToPostfixConversion {
     }
 
     private int getPrecedenceImprovedReadability(char operator) {
+        // Java 14 syntax
         return switch (operator) {
             case '+', '-' -> 1;
             case '*', '/' -> 2;
