@@ -1,6 +1,6 @@
 package DP;
 
-public class Solution_25_PrintLongestCommonSubstring {
+public class Solution_25_PrintLongestCommonSubsequence {
     // https://chatgpt.com/share/6a22f4ca-2cd4-8324-8647-08fe5d06d6b8
     public static String findLCS(int n, int m, String s1, String s2){
         int[][] dp = getLCSArray(n, m, s1, s2);

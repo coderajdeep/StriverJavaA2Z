@@ -5,12 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ffadb7-14d4-4aaf-bfaa-2c8debf50113" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BinarySearchTree/Solution_02_SearchInBST_700.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearchTree/Solution_03_MinInBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearchTree/Solution_11_ConstructBSTFromPreorder_1008.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearchTree/Solution_Q1_ConstructBSTFromPostorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_03_ImplementStackUsingQueue_225.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackQueue/Solution_03_ImplementStackUsingQueue_225.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_08_MinStack_155.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackQueue/Solution_08_MinStack_155.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_01_AssignCookies_455.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_02_FractionalKnapsack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_03_LemonadeChange_860.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_04_ValidParenthesisChecker_678.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_05_maxMeetingInOneRoom_NonOverlappingIntervals_435.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_06_JumpGame_I_55.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_17_NextSmallerElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_22_SumOfSubarrayRanges_2104.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_23_RemoveKDigits_402.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_24_LargestRectangleInHistogram_84.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_25_MaximalRectangle_85.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_26_SlidingWindowMaximum_239.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_27_StockSpan_901.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_28_CelebrityProblem_277.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_29_LRUCache_146.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_30_LFU_460.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_Q2_CountSmallerNumberAfterSelf_315.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_Q3_CircularQueue_622.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_15_2Sum_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/Solution_15_TwoSum_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DP/Solution_25_PrintLongestCommonSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/Solution_25_PrintLongestCommonSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_17_NumberOfGreaterElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackQueue/Solution_18_NumberOfGreaterElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_20_SumOfSubArrayMinimum_907.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackQueue/Solution_20_SumOfSubArrayMinimum_907.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +49,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;coderajdeep&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/coderajdeep/StriverJavaA2Z&quot;,
+    &quot;accountId&quot;: &quot;69f95abf-203e-4c56-8f0e-ed4bb7aed16e&quot;
+  }
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -82,6 +113,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -106,36 +145,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/StackQueue/Solution_20_SumOfSubArrayMinimum_907.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/StackQueue/Solution_20_SumOfSubArrayMinimum_907.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinarySearch/Solution_20_KthMissingPositiveNumber_1539.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinarySearch/Solution_20_KthMissingPositiveNumber_1539.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Tries/Solution_Q1_LongestDuplicateSubstring_1044.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

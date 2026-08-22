@@ -968,6 +968,6 @@ if (pq.size() > k) pq.poll(); // keep heap capped at k
 
 ## Notes
 
-**Coverage:** all 222 `.java` files under `src/` — Array (42), BinarySearch/BinarySearchTree/Tries (31), BinaryTree (30), DP (35), Graph/Heap (27), LinkedList/Recursion/SlidingWindowAndTwoPointer/StackQueue (56). User-defined classes and methods (e.g. `ListNode`, custom `Solution` helpers) are excluded — this is JDK API surface only.
+**Coverage:** all 222 `.java` files under `src/` — Array (42), BinarySearch/BinarySearchTree/Tries (31), BinaryTree (30), DP (35), Graph/Heap (27), LinkedList/Recursion/SlidingWindowAndTwoPointer/StackQueue (56). User-defined classes and methods (e.g. `ListNode`, custom `Solution_TakeUForward` helpers) are excluded — this is JDK API surface only.
 
 **Notably absent anywhere in the codebase:** `java.util.stream`, `Comparator.comparingInt`-style static factories, `LinkedHashMap`/`LinkedHashSet`, `Objects`, and the standalone `Stack` class (its role is played by `ArrayDeque` throughout).

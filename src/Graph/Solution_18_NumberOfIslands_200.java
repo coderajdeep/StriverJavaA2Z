@@ -6,6 +6,9 @@ import java.util.Queue;
 public class Solution_18_NumberOfIslands_200 {
     // Time complexity O(n*m)
     // Space complexity O(n*m)
+    // Note: uses 8-directional connectivity (includes diagonals); LeetCode #200 defines islands
+    // using only 4-directional (up/down/left/right) connectivity, so this can undercount islands
+    // that are only diagonally adjacent on the canonical LC 200 test cases.
     // left, up, right, down, left up, right up, right down, left down
     private static final int[] dx = {0, -1, 0, 1, -1, -1, 1, 1};
     private static final int[] dy = {-1, 0, 1, 0, -1, 1, 1, -1};

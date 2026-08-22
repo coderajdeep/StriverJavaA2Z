@@ -3,7 +3,7 @@ package StackQueue;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution_17_NumberOfGreaterElement {
+public class Solution_18_NumberOfGreaterElement {
     private static class Pair {
         private int value;
         private int index;

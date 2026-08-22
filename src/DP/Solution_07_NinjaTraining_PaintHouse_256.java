@@ -1,6 +1,9 @@
 package DP;
 
 public class Solution_07_NinjaTraining_PaintHouse_256 {
+    // Note: this implements takeUforward's generalized "Ninja's Training" (m activities, maximize points),
+    // not LeetCode #256 "Paint House" (fixed 3 colors, minimize cost) despite the filename suffix.
+
     // Function(day, lastTask) -> Maximum merit points that can be earned from day 0 to day 'day',
     // given that 'lastTask' was performed on the next day (day + 1) and therefore cannot be chosen on the current day.
 

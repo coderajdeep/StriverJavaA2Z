@@ -45,6 +45,9 @@ public class Solution_20_SumOfSubArrayMinimum_907 {
             // Otherwise we are going to be double calculate few elements
             // Just dry run below test case
             // [7,5,8,5]
+            // For the above example, when first 5 will calculate min element in subarray then
+            // index 1 element will include index 3 element
+            // but when last 5 will calculate min element in subarray then first 5 will not be included
             while (!stack.isEmpty() && arr[i] < arr[stack.peek()]) {
                 stack.pop();
             }

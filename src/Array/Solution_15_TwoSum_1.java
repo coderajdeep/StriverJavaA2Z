@@ -3,7 +3,7 @@ package Array;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Solution_15_2Sum_15 {
+public class Solution_15_TwoSum_1 {
     // Time complexity O(n)
     // Space complexity O(n)
     public int[] twoSum(int[] nums, int target) {
