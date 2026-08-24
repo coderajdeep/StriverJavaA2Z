@@ -68,7 +68,7 @@ s.substring(3)   → "defgh"
 s.substring(3,5) → "de"
 ```
 **Use cases**
-- Extracting the sub-problem string for recursive DP (e.g. palindrome partitioning)
+- Extracting the sub-problem string for recursive __14__DP (e.g. palindrome partitioning)
 - Splitting a string around a delimiter index found during a scan
 - Isolating a candidate palindromic substring to validate
 
@@ -117,7 +117,7 @@ o : String — mandatory
 "a".isEmpty() → false
 ```
 **Use cases**
-- Recursion base case once a substring has been fully consumed
+- __05__Recursion base case once a substring has been fully consumed
 - Guarding against empty tokens after a split
 - Early-return validation on function entry
 
@@ -252,7 +252,7 @@ Math.max(3, 7)   → 7
 Math.max(-2, -9) → -2
 ```
 **Use cases**
-- Tracking a running maximum in DP transitions (max subarray / profit)
+- Tracking a running maximum in __14__DP transitions (max subarray / profit)
 - Expanding a sliding window's right bound
 - Picking the larger of two recursive branch results
 
@@ -299,7 +299,7 @@ int best = Integer.MAX_VALUE; // seed a running min
 ```
 **Use cases**
 - Initializing a "running minimum" variable before the first comparison
-- Sentinel for "infinity" in shortest-path / DP cost arrays
+- Sentinel for "infinity" in shortest-path / __14__DP cost arrays
 
 ### `Integer.MIN_VALUE` — sentinel
 ```
@@ -309,7 +309,7 @@ int best = Integer.MIN_VALUE; // seed a running max
 ```
 **Use cases**
 - Initializing a "running maximum" variable before the first comparison
-- Sentinel for "negative infinity" in max-subarray style DP
+- Sentinel for "negative infinity" in max-subarray style __14__DP
 
 ### `Integer.compare(a,b)` — comparator body
 ```
@@ -394,7 +394,7 @@ grid[0].length → 6   // cols
 - Loop bounds for any array traversal, 1D or 2D (rows / cols)
 - Base case / termination check in recursive array processing
 
-### `System.arraycopy(src,sp,dst,dp,len)` — row copy, space-opt DP
+### `System.arraycopy(src,sp,dst,dp,len)` — row copy, space-opt __14__DP
 ```
 src : source array      sp : src start index
 dst : destination array dp : dst start index
@@ -405,7 +405,7 @@ System.arraycopy(src,1,dst,0,3);
 dst → {2,3,4,0}
 ```
 **Use cases**
-- Copying a DP row forward when reducing a 2D table to O(n) space
+- Copying a __14__DP row forward when reducing a 2D table to O(n) space
 - Fast bulk-copying a row / column out of a 2D grid
 
 ### `System.out.print/println(x)`
@@ -456,7 +456,7 @@ Arrays.fill(dp, -1);
 dp → {-1, -1, -1, -1}
 ```
 **Use cases**
-- Initializing a memo / DP array to -1 to mark "uncomputed"
+- Initializing a memo / __14__DP array to -1 to mark "uncomputed"
 - Resetting a visited / distance array before a BFS/DFS run
 
 ---
@@ -550,7 +550,7 @@ l = [10, 20, 30];
 l.get(1) → 20
 ```
 **Use cases**
-- Random access into a list during DP or two-pointer scans
+- Random access into a list during __14__DP or two-pointer scans
 - Reading a neighbor from an adjacency list during graph traversal
 
 ### `list.set(i, v)`
@@ -561,7 +561,7 @@ l.set(0, 9);
 l → [9, 2, 3]
 ```
 **Use cases**
-- Updating a DP table cell stored as a List instead of an array
+- Updating a __14__DP table cell stored as a List instead of an array
 - Overwriting a value in place during simulation
 
 ### `list.remove(i)` — backtracking pop
@@ -814,7 +814,7 @@ s → {6}
 
 ### `new ArrayDeque<>()` — doubles as stack or queue
 ```
-// preferred stack AND queue; faster than Stack/LinkedList
+// preferred stack AND queue; faster than Stack/__04__LinkedList
 Deque<Integer> dq = new ArrayDeque<>();
 dq → []
 
@@ -830,7 +830,7 @@ queue → []
 ### `new LinkedList<>()` — as Queue, BFS
 ```
 // implements Queue and Deque
-Queue<int[]> q = new LinkedList<>();
+Queue<int[]> q = new __04__LinkedList<>();
 q → []
 ```
 **Use cases**
@@ -968,6 +968,6 @@ if (pq.size() > k) pq.poll(); // keep heap capped at k
 
 ## Notes
 
-**Coverage:** all 222 `.java` files under `src/` — Array (42), BinarySearch/BinarySearchTree/Tries (31), BinaryTree (30), DP (35), Graph/Heap (27), LinkedList/Recursion/SlidingWindowAndTwoPointer/StackQueue (56). User-defined classes and methods (e.g. `ListNode`, custom `Solution_TakeUForward` helpers) are excluded — this is JDK API surface only.
+**Coverage:** all 222 `.java` files under `src/` — __01__Array (42), __02__BinarySearch/__12__BinarySearchTree/__15__Tries (31), __11__BinaryTree (30), __14__DP (35), __13__Graph/__09__Heap (27), __04__LinkedList/__05__Recursion/__08__SlidingWindowAndTwoPointer/__07__StackQueue (56). User-defined classes and methods (e.g. `ListNode`, custom `Solution_TakeUForward` helpers) are excluded — this is JDK API surface only.
 
 **Notably absent anywhere in the codebase:** `java.util.stream`, `Comparator.comparingInt`-style static factories, `LinkedHashMap`/`LinkedHashSet`, `Objects`, and the standalone `Stack` class (its role is played by `ArrayDeque` throughout).

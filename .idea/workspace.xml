@@ -5,31 +5,304 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ffadb7-14d4-4aaf-bfaa-2c8debf50113" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_01_AssignCookies_455.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_02_FractionalKnapsack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_03_LemonadeChange_860.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_04_ValidParenthesisChecker_678.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_05_maxMeetingInOneRoom_NonOverlappingIntervals_435.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy/Solution_06_JumpGame_I_55.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_17_NextSmallerElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_22_SumOfSubarrayRanges_2104.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_23_RemoveKDigits_402.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_24_LargestRectangleInHistogram_84.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_25_MaximalRectangle_85.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_26_SlidingWindowMaximum_239.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_27_StockSpan_901.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_28_CelebrityProblem_277.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_29_LRUCache_146.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_30_LFU_460.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_Q2_CountSmallerNumberAfterSelf_315.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackQueue/Solution_Q3_CircularQueue_622.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/Solution_15_2Sum_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/Solution_15_TwoSum_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DP/Solution_25_PrintLongestCommonSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/Solution_25_PrintLongestCommonSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_01_largestElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_01_largestElementInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_01_largestElementInArray.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_01_largestElementInArray.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_02_secondLargestElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_02_secondLargestElementInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_02_secondLargestElementInArray.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_02_secondLargestElementInArray.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_03_checkSortedOrRotated_1752.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_03_checkSortedOrRotated_1752.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_03_checkSortedOrRotated_1752.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_03_checkSortedOrRotated_1752.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_04_removeDuplicateFromSortedArray_26.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_04_removeDuplicateFromSortedArray_26.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_04_removeDuplicateFromSortedArray_26.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_04_removeDuplicateFromSortedArray_26.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_05_leftRotateByOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_05_leftRotateByOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_05_leftRotateByOne.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_05_leftRotateByOne.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_06_leftRotateByK_189.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_06_leftRotateByK_189.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_06_leftRotateByK_189.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_06_leftRotateByK_189.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_07_moveZerosToEnd_283.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_07_moveZerosToEnd_283.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_07_moveZerosToEnd_283.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_07_moveZerosToEnd_283.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_08_linearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_08_linearSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_08_linearSearch.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_08_linearSearch.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_09_unionOfTwoSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_09_unionOfTwoSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_09_unionOfTwoSortedArray.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_09_unionOfTwoSortedArray.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_10_MissingNumber_268.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_10_MissingNumber_268.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_10_MissingNumber_268.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_10_MissingNumber_268.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_11_MaxConsecutiveOne_485.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_11_MaxConsecutiveOne_485.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_11_MaxConsecutiveOne_485.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_11_MaxConsecutiveOne_485.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_12_singleNumber_136.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_12_singleNumber_136.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_12_singleNumber_136.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_12_singleNumber_136.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_13_LargestSubArrayWithGivenSumNonNegative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_13_LargestSubArrayWithGivenSumNonNegative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_13_LargestSubArrayWithGivenSumNonNegative.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_13_LargestSubArrayWithGivenSumNonNegative.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_14_LargestSubArrayWithGivenSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_14_LargestSubArrayWithGivenSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_14_LargestSubArrayWithGivenSum.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_14_LargestSubArrayWithGivenSum.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_15_TwoSum_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_15_TwoSum_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_15_TwoSum_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_15_TwoSum_1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_16_sort012_75.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_16_sort012_75.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_16_sort012_75.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_16_sort012_75.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_17_majorityElement_I_169.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_17_majorityElement_I_169.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_17_majorityElement_I_169.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_17_majorityElement_I_169.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_18_maximumSubArray_53.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_18_maximumSubArray_53.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_18_maximumSubArray_53.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_18_maximumSubArray_53.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_20_StockBuyAndSell_121.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_20_StockBuyAndSell_121.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_20_StockBuyAndSell_121.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_20_StockBuyAndSell_121.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_21_RearrangeArray_2149.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_21_RearrangeArray_2149.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_21_RearrangeArray_2149.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_21_RearrangeArray_2149.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_22_NextPermutation_31.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_22_NextPermutation_31.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_22_NextPermutation_31.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_22_NextPermutation_31.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_23_leadersInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_23_leadersInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_23_leadersInArray.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_23_leadersInArray.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_24_longestConsecutiveElements_128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_24_longestConsecutiveElements_128.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_24_longestConsecutiveElements_128.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_24_longestConsecutiveElements_128.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_25_SetMatrixZero_73.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_25_SetMatrixZero_73.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_25_SetMatrixZero_73.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_25_SetMatrixZero_73.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_26_RotateMatrix_48.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_26_RotateMatrix_48.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_26_RotateMatrix_48.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_26_RotateMatrix_48.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_27_SpiralMatrix_54.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_27_SpiralMatrix_54.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_27_SpiralMatrix_54.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_27_SpiralMatrix_54.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_27_SubArraySumEqualsK_560.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_27_SubArraySumEqualsK_560.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_27_SubArraySumEqualsK_560.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_27_SubArraySumEqualsK_560.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_28_Pascal_Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_28_Pascal_Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_28_Pascal_Triangle.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_28_Pascal_Triangle.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_28_Pascal_Triangle_II_119.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_28_Pascal_Triangle_II_119.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_28_Pascal_Triangle_II_119.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_28_Pascal_Triangle_II_119.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_28_Pascal_Triangle_I_118.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_28_Pascal_Triangle_I_118.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_28_Pascal_Triangle_I_118.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_28_Pascal_Triangle_I_118.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_29_MajorityElement_II_229.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_29_MajorityElement_II_229.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_29_MajorityElement_II_229.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_29_MajorityElement_II_229.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_30_3sum_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_30_3sum_15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_30_3sum_15.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_30_3sum_15.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_31_4sum_18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_31_4sum_18.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_31_4sum_18.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_31_4sum_18.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_32_LargestSubArrayWithGivenSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_32_LargestSubArrayWithGivenSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_32_LargestSubArrayWithGivenSum.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_32_LargestSubArrayWithGivenSum.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_33_LargestSubArrayWithGivenXOR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_33_LargestSubArrayWithGivenXOR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_33_LargestSubArrayWithGivenXOR.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_33_LargestSubArrayWithGivenXOR.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_33_SubArrayCountWithGivenXOR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_33_SubArrayCountWithGivenXOR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_33_SubArrayCountWithGivenXOR.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_33_SubArrayCountWithGivenXOR.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_34_MergeOverlappingIntervals_56.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_34_MergeOverlappingIntervals_56.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_34_MergeOverlappingIntervals_56.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_34_MergeOverlappingIntervals_56.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_35_MergeTwoSortedArray_88.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_35_MergeTwoSortedArray_88.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_35_MergeTwoSortedArray_88.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_35_MergeTwoSortedArray_88.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_36_FindMissingRepeatingNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_36_FindMissingRepeatingNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_36_FindMissingRepeatingNumbers.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_36_FindMissingRepeatingNumbers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_37_InversionsCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_37_InversionsCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_37_InversionsCount.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_37_InversionsCount.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_38_ReversePairs_493.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_38_ReversePairs_493.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_38_ReversePairs_493.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_38_ReversePairs_493.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_39_maxProductSubArray_152.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_39_maxProductSubArray_152.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/Solution_39_maxProductSubArray_152.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__01__Array/Solution_39_maxProductSubArray_152.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_05_CeilFloorInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_05_CeilFloorInSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_05_CeilFloorInSortedArray.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_05_CeilFloorInSortedArray.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_06_FirstAndLastOccurrence_34.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_06_FirstAndLastOccurrence_34.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_06_FirstAndLastOccurrence_34.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_06_FirstAndLastOccurrence_34.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_07_CountOccurrencesInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_07_CountOccurrencesInSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_07_CountOccurrencesInSortedArray.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_07_CountOccurrencesInSortedArray.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_08_searchInRotatedSortedArrayI_33.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_08_searchInRotatedSortedArrayI_33.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_08_searchInRotatedSortedArrayI_33.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_08_searchInRotatedSortedArrayI_33.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_09_searchInRotatedArrayII_81.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_09_searchInRotatedArrayII_81.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_09_searchInRotatedArrayII_81.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_09_searchInRotatedArrayII_81.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_10_FindMinimumInRotatedSortedArray_153.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_10_FindMinimumInRotatedSortedArray_153.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_10_FindMinimumInRotatedSortedArray_153.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_10_FindMinimumInRotatedSortedArray_153.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_11_FindMinimumRotatedSortedArray_II_154.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_11_FindMinimumRotatedSortedArray_II_154.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_11_FindMinimumRotatedSortedArray_II_154.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_11_FindMinimumRotatedSortedArray_II_154.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_11_RotationCountInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_11_RotationCountInSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_11_RotationCountInSortedArray.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_11_RotationCountInSortedArray.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_12_SingleElementInSortedArray_540.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_12_SingleElementInSortedArray_540.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_12_SingleElementInSortedArray_540.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_12_SingleElementInSortedArray_540.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_13_peakElement_162.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_13_peakElement_162.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_13_peakElement_162.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_13_peakElement_162.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_14_SquareRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_14_SquareRoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_14_SquareRoot.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_14_SquareRoot.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_15_NthRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_15_NthRoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_15_NthRoot.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_15_NthRoot.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_16_KokoEatingBananas_875.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_16_KokoEatingBananas_875.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_16_KokoEatingBananas_875.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_16_KokoEatingBananas_875.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_17_MinimumDaysToMakeM_Bouquets_1482.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_17_MinimumDaysToMakeM_Bouquets_1482.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_17_MinimumDaysToMakeM_Bouquets_1482.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_17_MinimumDaysToMakeM_Bouquets_1482.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_18_FindSmallestDivisor_1283.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_18_FindSmallestDivisor_1283.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_18_FindSmallestDivisor_1283.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_18_FindSmallestDivisor_1283.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_19_MinCapacityToShipPackagesWithinD_Days_1011.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_19_MinCapacityToShipPackagesWithinD_Days_1011.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_19_MinCapacityToShipPackagesWithinD_Days_1011.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_19_MinCapacityToShipPackagesWithinD_Days_1011.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_20_KthMissingPositiveNumber_1539.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_20_KthMissingPositiveNumber_1539.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_20_KthMissingPositiveNumber_1539.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_20_KthMissingPositiveNumber_1539.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_21_AggressiveCows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_21_AggressiveCows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_21_AggressiveCows.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_21_AggressiveCows.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_22_BookAllocationProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_22_BookAllocationProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_22_BookAllocationProblem.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_22_BookAllocationProblem.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_23_SplitArrayLargestSum_410.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_23_SplitArrayLargestSum_410.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_23_SplitArrayLargestSum_410.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_23_SplitArrayLargestSum_410.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_24_PainterPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_24_PainterPartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_24_PainterPartition.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_24_PainterPartition.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_LowerBound_And_UpperBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_LowerBound_And_UpperBound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/Solution_LowerBound_And_UpperBound.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__02__BinarySearch/Solution_LowerBound_And_UpperBound.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/BasicHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/BasicHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/BasicHeap.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/BasicHeap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_02_ImplementMinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_02_ImplementMinHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_02_ImplementMinHeap.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_02_ImplementMinHeap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_07_SortKSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_07_SortKSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_07_SortKSortedArray.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_07_SortKSortedArray.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_08_mergeMsortedList_23.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_08_mergeMsortedList_23.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_08_mergeMsortedList_23.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_08_mergeMsortedList_23.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_15_MaximumSumCombination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_15_MaximumSumCombination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_15_MaximumSumCombination.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_15_MaximumSumCombination.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_16_medianInDataStream_295.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_16_medianInDataStream_295.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_16_medianInDataStream_295.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_16_medianInDataStream_295.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_17_TopKFrequentElements_347.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_17_TopKFrequentElements_347.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heap/Solution_17_TopKFrequentElements_347.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__09__Heap/Solution_17_TopKFrequentElements_347.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_03_DeleteNodeHeadNotGiven_237.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_03_DeleteNodeHeadNotGiven_237.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_03_DeleteNodeHeadNotGiven_237.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_03_DeleteNodeHeadNotGiven_237.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_09_ReverseDoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_09_ReverseDoublyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_09_ReverseDoublyLinkedList.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_09_ReverseDoublyLinkedList.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_13_detectCycle_141.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_13_detectCycle_141.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_13_detectCycle_141.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_13_detectCycle_141.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_14_detectCycleII_142.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_14_detectCycleII_142.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_14_detectCycleII_142.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_14_detectCycleII_142.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_15_lengthOfCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_15_lengthOfCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_15_lengthOfCycle.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_15_lengthOfCycle.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_16_palindromicLinkedList_234.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_16_palindromicLinkedList_234.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_16_palindromicLinkedList_234.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_16_palindromicLinkedList_234.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_17_OddEvenSegrregation_328.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_17_OddEvenSegrregation_328.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_17_OddEvenSegrregation_328.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_17_OddEvenSegrregation_328.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_18_RemoveNthNodeFromEnd_19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_18_RemoveNthNodeFromEnd_19.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_18_RemoveNthNodeFromEnd_19.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_18_RemoveNthNodeFromEnd_19.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_19_DeleteMiddleOfLinkedlist_2095.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_19_DeleteMiddleOfLinkedlist_2095.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_19_DeleteMiddleOfLinkedlist_2095.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_19_DeleteMiddleOfLinkedlist_2095.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_20_sortLinkedList_148.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_20_sortLinkedList_148.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_20_sortLinkedList_148.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_20_sortLinkedList_148.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_21_sort012LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_21_sort012LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_21_sort012LinkedList.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_21_sort012LinkedList.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_22_intersectionOfLinkedList_160.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_22_intersectionOfLinkedList_160.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_22_intersectionOfLinkedList_160.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_22_intersectionOfLinkedList_160.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_23_addOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_23_addOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_23_addOne.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_23_addOne.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_24_addTwoNumbers_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_24_addTwoNumbers_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution_24_addTwoNumbers_2.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__04__LinkedList/Solution_24_addTwoNumbers_2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_17_NumberOfGreaterElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackQueue/Solution_18_NumberOfGreaterElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_20_SumOfSubArrayMinimum_907.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackQueue/Solution_20_SumOfSubArrayMinimum_907.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_01_Atoi_Or_Stoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_01_Atoi_Or_Stoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_01_Atoi_Or_Stoi.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_01_Atoi_Or_Stoi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_06_GenerateBinaryStringWithoutConsecutiveOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_06_GenerateBinaryStringWithoutConsecutiveOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_06_GenerateBinaryStringWithoutConsecutiveOne.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_06_GenerateBinaryStringWithoutConsecutiveOne.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_07_GenerateParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_07_GenerateParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_07_GenerateParentheses.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_07_GenerateParentheses.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_08_PowerSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_08_PowerSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_08_PowerSet.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_08_PowerSet.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_09_GenerateSubsequenceWithTargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_09_GenerateSubsequenceWithTargetSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_09_GenerateSubsequenceWithTargetSum.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_09_GenerateSubsequenceWithTargetSum.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_12_CombinationSum_39.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_12_CombinationSum_39.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_12_CombinationSum_39.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_12_CombinationSum_39.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_13_CombinationSumII_40.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_13_CombinationSumII_40.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_13_CombinationSumII_40.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_13_CombinationSumII_40.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_14_subsetsI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_14_subsetsI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_14_subsetsI.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_14_subsetsI.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_15_subsetsII_90.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_15_subsetsII_90.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_15_subsetsII_90.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_15_subsetsII_90.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_16_CombinationSumIII_216.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_16_CombinationSumIII_216.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_16_CombinationSumIII_216.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_16_CombinationSumIII_216.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_17_Letter_Combinations_of_Phone_Number_17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_17_Letter_Combinations_of_Phone_Number_17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_17_Letter_Combinations_of_Phone_Number_17.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_17_Letter_Combinations_of_Phone_Number_17.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_18_PalindromePartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_18_PalindromePartitioning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_18_PalindromePartitioning.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_18_PalindromePartitioning.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_19_Word_Search_79.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_19_Word_Search_79.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_19_Word_Search_79.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_19_Word_Search_79.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_20_N_Queen_51.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_20_N_Queen_51.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_20_N_Queen_51.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_20_N_Queen_51.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_21_RatInMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_21_RatInMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Solution_21_RatInMaze.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__05__Recursion/Solution_21_RatInMaze.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_01_LongestSubstringWithoutRepeatingCharacter_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_01_LongestSubstringWithoutRepeatingCharacter_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_01_LongestSubstringWithoutRepeatingCharacter_3.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_01_LongestSubstringWithoutRepeatingCharacter_3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_02_Max_Consecutive_Ones_III_1004.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_02_Max_Consecutive_Ones_III_1004.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_02_Max_Consecutive_Ones_III_1004.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_02_Max_Consecutive_Ones_III_1004.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_03_FruitsIntoBaskets_904.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_03_FruitsIntoBaskets_904.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_03_FruitsIntoBaskets_904.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_03_FruitsIntoBaskets_904.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_04_LongestRepeatingCharacter_424.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_04_LongestRepeatingCharacter_424.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_04_LongestRepeatingCharacter_424.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_04_LongestRepeatingCharacter_424.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_05_BinarySubArrayWithGivenSum_930.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_05_BinarySubArrayWithGivenSum_930.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_05_BinarySubArrayWithGivenSum_930.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_05_BinarySubArrayWithGivenSum_930.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_06_NumberOfNiceSubarrays_1248.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_06_NumberOfNiceSubarrays_1248.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_06_NumberOfNiceSubarrays_1248.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_06_NumberOfNiceSubarrays_1248.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_07_NumberOfSubstringContainingAllThreeCharacter_1358.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_07_NumberOfSubstringContainingAllThreeCharacter_1358.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_07_NumberOfSubstringContainingAllThreeCharacter_1358.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_07_NumberOfSubstringContainingAllThreeCharacter_1358.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_08_MaxPointsObtainFromCards_1423.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_08_MaxPointsObtainFromCards_1423.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_08_MaxPointsObtainFromCards_1423.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_08_MaxPointsObtainFromCards_1423.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_09_LongestSubstringWithAtMostKDistinctCharacters_340.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_09_LongestSubstringWithAtMostKDistinctCharacters_340.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_09_LongestSubstringWithAtMostKDistinctCharacters_340.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_09_LongestSubstringWithAtMostKDistinctCharacters_340.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_10_totalSubArrayWithKDistinctIntegers_992.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_10_totalSubArrayWithKDistinctIntegers_992.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_10_totalSubArrayWithKDistinctIntegers_992.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_10_totalSubArrayWithKDistinctIntegers_992.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_11_MinimumWindowSubstring_76.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_11_MinimumWindowSubstring_76.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_11_MinimumWindowSubstring_76.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_11_MinimumWindowSubstring_76.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_12_Minimum_Window_Subsequence_727.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_12_Minimum_Window_Subsequence_727.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_12_Minimum_Window_Subsequence_727.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_12_Minimum_Window_Subsequence_727.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_Q1_MaximumLengthSubstringWithKDistinctCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_Q1_MaximumLengthSubstringWithKDistinctCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_Q1_MaximumLengthSubstringWithKDistinctCharacter.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_Q1_MaximumLengthSubstringWithKDistinctCharacter.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_Q2_ShortestSubstringWhichContainsAllCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_Q2_ShortestSubstringWhichContainsAllCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowAndTwoPointer/Solution_Q2_ShortestSubstringWhichContainsAllCharacters.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__08__SlidingWindowAndTwoPointer/Solution_Q2_ShortestSubstringWhichContainsAllCharacters.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_01_ImplementStackUsingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_01_ImplementStackUsingArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_01_ImplementStackUsingArray.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_01_ImplementStackUsingArray.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_02_ImplementQueueUsingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_02_ImplementQueueUsingArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_02_ImplementQueueUsingArray.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_02_ImplementQueueUsingArray.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_03_ImplementStackUsingQueue_225.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_03_ImplementStackUsingQueue_225.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_03_ImplementStackUsingQueue_225.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_03_ImplementStackUsingQueue_225.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_04_ImplementQueueUsingStack_232.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_04_ImplementQueueUsingStack_232.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_04_ImplementQueueUsingStack_232.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_04_ImplementQueueUsingStack_232.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_05_ImplementStackUsingLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_05_ImplementStackUsingLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_05_ImplementStackUsingLinkedList.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_05_ImplementStackUsingLinkedList.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_06_ImplementQueueUsingLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_06_ImplementQueueUsingLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_06_ImplementQueueUsingLinkedList.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_06_ImplementQueueUsingLinkedList.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_07_ValidParentheses_20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_07_ValidParentheses_20.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_07_ValidParentheses_20.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_07_ValidParentheses_20.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_08_MinStack_155.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_08_MinStack_155.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_08_MinStack_155.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_08_MinStack_155.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_09_InfixToPostfix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_09_InfixToPostfix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_09_InfixToPostfix.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_09_InfixToPostfix.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_10_PrefixToInfix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_10_PrefixToInfix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_10_PrefixToInfix.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_10_PrefixToInfix.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_11_PrefixToPostfix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_11_PrefixToPostfix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_11_PrefixToPostfix.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_11_PrefixToPostfix.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_12_PostfixToPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_12_PostfixToPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_12_PostfixToPrefix.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_12_PostfixToPrefix.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_13_PostfixToInfix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_13_PostfixToInfix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_13_PostfixToInfix.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_13_PostfixToInfix.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_14_InfixToPrefixConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_14_InfixToPrefixConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_14_InfixToPrefixConversion.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_14_InfixToPrefixConversion.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_15_NextGreaterElement_I_496.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_15_NextGreaterElement_I_496.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_15_NextGreaterElement_I_496.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_15_NextGreaterElement_I_496.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_16_NextGreaterElement_II_503.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_16_NextGreaterElement_II_503.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_16_NextGreaterElement_II_503.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_16_NextGreaterElement_II_503.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_17_NextSmallerElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_17_NextSmallerElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_17_NextSmallerElement.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_17_NextSmallerElement.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_18_NumberOfGreaterElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_18_NumberOfGreaterElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_18_NumberOfGreaterElement.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_18_NumberOfGreaterElement.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_19_TrappingRainWater_42.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_19_TrappingRainWater_42.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_19_TrappingRainWater_42.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_19_TrappingRainWater_42.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_20_SumOfSubArrayMinimum_907.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_20_SumOfSubArrayMinimum_907.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_20_SumOfSubArrayMinimum_907.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_20_SumOfSubArrayMinimum_907.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_21_AsteroidCollision_735.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_21_AsteroidCollision_735.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_21_AsteroidCollision_735.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_21_AsteroidCollision_735.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_22_SumOfSubarrayRanges_2104.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_22_SumOfSubarrayRanges_2104.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_22_SumOfSubarrayRanges_2104.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_22_SumOfSubarrayRanges_2104.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_23_RemoveKDigits_402.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_23_RemoveKDigits_402.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_23_RemoveKDigits_402.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_23_RemoveKDigits_402.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_24_LargestRectangleInHistogram_84.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_24_LargestRectangleInHistogram_84.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_24_LargestRectangleInHistogram_84.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_24_LargestRectangleInHistogram_84.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_25_MaximalRectangle_85.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_25_MaximalRectangle_85.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_25_MaximalRectangle_85.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_25_MaximalRectangle_85.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_26_SlidingWindowMaximum_239.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_26_SlidingWindowMaximum_239.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_26_SlidingWindowMaximum_239.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_26_SlidingWindowMaximum_239.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_27_StockSpan_901.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_27_StockSpan_901.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_27_StockSpan_901.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_27_StockSpan_901.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_28_CelebrityProblem_277.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_28_CelebrityProblem_277.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_28_CelebrityProblem_277.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_28_CelebrityProblem_277.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_29_LRUCache_146.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_29_LRUCache_146.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_29_LRUCache_146.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_29_LRUCache_146.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_30_LFU_460.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_30_LFU_460.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_30_LFU_460.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_30_LFU_460.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_Q1_DailyTemperature_739.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_Q1_DailyTemperature_739.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_Q1_DailyTemperature_739.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_Q1_DailyTemperature_739.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_Q2_CountSmallerNumberAfterSelf_315.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_Q2_CountSmallerNumberAfterSelf_315.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_Q2_CountSmallerNumberAfterSelf_315.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_Q2_CountSmallerNumberAfterSelf_315.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_Q3_CircularQueue_622.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_Q3_CircularQueue_622.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/Solution_Q3_CircularQueue_622.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/__07__StackQueue/Solution_Q3_CircularQueue_622.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,26 +352,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Debug",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />

@@ -321,7 +321,7 @@ b : int — optional  (end, exclusive)</span>
 s = "abcdefgh"
 s.substring(3)   <span class="r">→ "defgh"</span>
 s.substring(3,5) <span class="r">→ "de"</span></div><p class="uc-label">Use cases</p><ul class="usecases">
-          <li>Extracting the sub-problem string for recursive DP (e.g. palindrome partitioning)</li>
+          <li>Extracting the sub-problem string for recursive __14__DP (e.g. palindrome partitioning)</li>
           <li>Splitting a string around a delimiter index found during a scan</li>
           <li>Isolating a candidate palindromic substring to validate</li>
         </ul></details></li>
@@ -354,7 +354,7 @@ s.split(",")  <span class="r">→ ["a","b","c"]</span>
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">s.isEmpty()</code></span><span class="note">"" check</span></summary><div class="example"><span class="p">// returns boolean (true when length == 0)</span>
 "".isEmpty()  <span class="r">→ true</span>
 "a".isEmpty() <span class="r">→ false</span></div><p class="uc-label">Use cases</p><ul class="usecases">
-          <li>Recursion base case once a substring has been fully consumed</li>
+          <li>__05__Recursion base case once a substring has been fully consumed</li>
           <li>Guarding against empty tokens after a split</li>
           <li>Early-return validation on function entry</li>
         </ul></details></li>
@@ -445,7 +445,7 @@ sb.setCharAt(1,'X') <span class="r">→ "aXc"</span></div><p class="uc-label">Us
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Math.max(a,b)</code></span></summary><div class="example"><span class="p">a, b : int/long/double — mandatory; returns the larger</span>
 Math.max(3, 7)   <span class="r">→ 7</span>
 Math.max(-2, -9) <span class="r">→ -2</span></div><p class="uc-label">Use cases</p><ul class="usecases">
-          <li>Tracking a running maximum in DP transitions (max subarray / profit)</li>
+          <li>Tracking a running maximum in __14__DP transitions (max subarray / profit)</li>
           <li>Expanding a sliding window's right bound</li>
           <li>Picking the larger of two recursive branch results</li>
         </ul></details></li>
@@ -478,13 +478,13 @@ Math.ceil(2.0) <span class="r">→ 2.0</span>
 Integer.MAX_VALUE <span class="r">→ 2147483647</span>
 int best = Integer.MAX_VALUE; <span class="p">// seed a running min</span></div><p class="uc-label">Use cases</p><ul class="usecases">
           <li>Initializing a "running minimum" variable before the first comparison</li>
-          <li>Sentinel for "infinity" in shortest-path / DP cost arrays</li>
+          <li>Sentinel for "infinity" in shortest-path / __14__DP cost arrays</li>
         </ul></details></li>
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Integer.MIN_VALUE</code></span><span class="note">sentinel</span></summary><div class="example"><span class="p">// constant int</span>
 Integer.MIN_VALUE <span class="r">→ -2147483648</span>
 int best = Integer.MIN_VALUE; <span class="p">// seed a running max</span></div><p class="uc-label">Use cases</p><ul class="usecases">
           <li>Initializing a "running maximum" variable before the first comparison</li>
-          <li>Sentinel for "negative infinity" in max-subarray style DP</li>
+          <li>Sentinel for "negative infinity" in max-subarray style __14__DP</li>
         </ul></details></li>
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">Integer.compare(a,b)</code></span><span class="note">comparator body</span></summary><div class="example"><span class="p">a, b : int — mandatory; returns -1 / 0 / 1 (overflow-safe)</span>
 Integer.compare(3, 7) <span class="r">→ -1</span>
@@ -545,14 +545,14 @@ grid[0].length <span class="r">→ 6   // cols</span></div><p class="uc-label">U
           <li>Loop bounds for any array traversal, 1D or 2D (rows / cols)</li>
           <li>Base case / termination check in recursive array processing</li>
         </ul></details></li>
-        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">System.arraycopy(src,sp,dst,dp,len)</code></span><span class="note">row copy, space-opt DP</span></summary><div class="example"><span class="p">src : source array      sp : src start index
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">System.arraycopy(src,sp,dst,dp,len)</code></span><span class="note">row copy, space-opt __14__DP</span></summary><div class="example"><span class="p">src : source array      sp : src start index
 dst : destination array dp : dst start index
 len : count to copy</span>
 int[] src = {1,2,3,4};
 int[] dst = new int[4];
 System.arraycopy(src,1,dst,0,3);
 dst <span class="r">→ {2,3,4,0}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
-          <li>Copying a DP row forward when reducing a 2D table to O(n) space</li>
+          <li>Copying a __14__DP row forward when reducing a 2D table to O(n) space</li>
           <li>Fast bulk-copying a row / column out of a 2D grid</li>
         </ul></details></li>
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">System.out.print/println(x)</code></span></summary><div class="example"><span class="p">x : any — mandatory</span>
@@ -589,7 +589,7 @@ Arrays.sort(iv, (p, q) -> p[0] - q[0]);</div><p class="uc-label">Use cases</p><u
 int[] dp = new int[4];
 Arrays.fill(dp, -1);
 dp <span class="r">→ {-1, -1, -1, -1}</span></div><p class="uc-label">Use cases</p><ul class="usecases">
-          <li>Initializing a memo / DP array to -1 to mark "uncomputed"</li>
+          <li>Initializing a memo / __14__DP array to -1 to mark "uncomputed"</li>
           <li>Resetting a visited / distance array before a BFS/DFS run</li>
         </ul></details></li>
       </ul>
@@ -641,7 +641,7 @@ res.add(new ArrayList&lt;&gt;(path)); <span class="p">// snapshot in backtrackin
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new ArrayList&lt;&gt;(Collections.nCopies(n, v))</code></span><span class="note">fixed-size, pre-filled</span></summary><div class="example"><span class="p">n : int (size)   v : fill value — both mandatory; MUTABLE (unlike Collections.nCopies alone)</span>
 new ArrayList&lt;&gt;(Collections.nCopies(5, 0)) <span class="r">→ [0, 0, 0, 0, 0]</span>
 List&lt;Integer&gt; dp = new ArrayList&lt;&gt;(Collections.nCopies(n, -1));</div><p class="uc-label">Use cases</p><ul class="usecases">
-          <li>Allocating a DP array/list of known size initialized to a sentinel value (e.g. -1 for "unvisited")</li>
+          <li>Allocating a __14__DP array/list of known size initialized to a sentinel value (e.g. -1 for "unvisited")</li>
           <li>Pre-sizing a result list you plan to fill by index via <code>set(i, v)</code> instead of <code>add</code></li>
         </ul></details></li>
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.add(e)</code></span></summary><div class="example"><span class="p">e : element — mandatory; appends to end</span>
@@ -661,14 +661,14 @@ l <span class="r">→ [1, 2, 3]</span></div><p class="uc-label">Use cases</p><ul
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.get(i)</code></span></summary><div class="example"><span class="p">i : int — mandatory (index); returns element</span>
 l = [10, 20, 30];
 l.get(1) <span class="r">→ 20</span></div><p class="uc-label">Use cases</p><ul class="usecases">
-          <li>Random access into a list during DP or two-pointer scans</li>
+          <li>Random access into a list during __14__DP or two-pointer scans</li>
           <li>Reading a neighbor from an adjacency list during graph traversal</li>
         </ul></details></li>
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.set(i, v)</code></span></summary><div class="example"><span class="p">i : int (index)   v : new value — both mandatory</span>
 l = [1, 2, 3];
 l.set(0, 9);
 l <span class="r">→ [9, 2, 3]</span></div><p class="uc-label">Use cases</p><ul class="usecases">
-          <li>Updating a DP table cell stored as a List instead of an array</li>
+          <li>Updating a __14__DP table cell stored as a List instead of an array</li>
           <li>Overwriting a value in place during simulation</li>
         </ul></details></li>
         <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">list.remove(i)</code></span><span class="note">backtracking pop</span></summary><div class="example"><span class="p">i : int — removes by INDEX (not value, for int lists)</span>
@@ -835,9 +835,9 @@ s <span class="r">→ {6}</span></div><p class="uc-label">Use cases</p><ul class
 
     <section class="card" data-cat="java.util.Queue Deque ArrayDeque Stack">
       <h2>Queue / Deque / ArrayDeque</h2>
-      <div class="import">java.util.{Queue, Deque, ArrayDeque, LinkedList}</div>
+      <div class="import">java.util.{Queue, Deque, ArrayDeque, __04__LinkedList}</div>
       <ul class="entries">
-        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new ArrayDeque&lt;&gt;()</code></span><span class="note">doubles as stack or queue</span></summary><div class="example"><span class="p">// preferred stack AND queue; faster than Stack/LinkedList</span>
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new ArrayDeque&lt;&gt;()</code></span><span class="note">doubles as stack or queue</span></summary><div class="example"><span class="p">// preferred stack AND queue; faster than Stack/__04__LinkedList</span>
 Deque&lt;Integer&gt; dq = new ArrayDeque&lt;&gt;();
 dq <span class="r">→ []</span>
 
@@ -848,8 +848,8 @@ queue <span class="r">→ []</span></div><p class="uc-label">Use cases</p><ul cl
           <li>BFS using it as a queue (offer / poll)</li>
           <li>Monotonic stack / deque problems (next greater element, sliding-window max)</li>
         </ul></details></li>
-        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new LinkedList&lt;&gt;()</code></span><span class="note">as Queue, BFS</span></summary><div class="example"><span class="p">// implements Queue and Deque</span>
-Queue&lt;int[]&gt; q = new LinkedList&lt;&gt;();
+        <li><details class="entry"><summary><span class="sig-wrap"><span class="chevron"></span><code class="sig">new __04__LinkedList&lt;&gt;()</code></span><span class="note">as Queue, BFS</span></summary><div class="example"><span class="p">// implements Queue and Deque</span>
+Queue&lt;int[]&gt; q = new __04__LinkedList&lt;&gt;();
 q <span class="r">→ []</span></div><p class="uc-label">Use cases</p><ul class="usecases">
           <li>Queue for level-order BFS traversal of a tree or graph</li>
         </ul></details></li>
@@ -941,7 +941,7 @@ if (pq.size() &gt; k) pq.poll(); <span class="p">// keep heap capped at k</span>
   </main>
 
   <footer>
-    <p><strong>Coverage:</strong> all 222 <code>.java</code> files under <code>src/</code> — Array (42), BinarySearch/BinarySearchTree/Tries (31), BinaryTree (30), DP (35), Graph/Heap (27), LinkedList/Recursion/SlidingWindowAndTwoPointer/StackQueue (56). User-defined classes and methods (e.g. <code>ListNode</code>, custom <code>Solution</code> helpers) are excluded — this is JDK API surface only.</p>
+    <p><strong>Coverage:</strong> all 222 <code>.java</code> files under <code>src/</code> — __01__Array (42), __02__BinarySearch/__12__BinarySearchTree/__15__Tries (31), __11__BinaryTree (30), __14__DP (35), __13__Graph/__09__Heap (27), __04__LinkedList/__05__Recursion/__08__SlidingWindowAndTwoPointer/__07__StackQueue (56). User-defined classes and methods (e.g. <code>ListNode</code>, custom <code>Solution</code> helpers) are excluded — this is JDK API surface only.</p>
     <p>Notably absent anywhere in the codebase: <code>java.util.stream</code>, <code>Comparator.comparingInt</code>-style static factories, <code>LinkedHashMap</code>/<code>LinkedHashSet</code>, <code>Objects</code>, and the standalone <code>Stack</code> class (its role is played by <code>ArrayDeque</code> throughout).</p>
     <p>Each dropdown shows a runnable example (parameters, then calls with their <span style="color:var(--accent);font-weight:600">→</span> outputs) and common interview use cases — click a row to expand.</p>
   </footer>
